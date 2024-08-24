@@ -1,0 +1,27 @@
+{
+    "id": "752A4B71",
+    "path": "C:/Users/Ken/temperature-analysis-project/R/runner.R",
+    "project_path": "runner.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1724449473317.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "36,2",
+        "scrollLine": "20"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1724466590,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1724542479380,
+    "read_only": false,
+    "read_only_alternatives": []
+}

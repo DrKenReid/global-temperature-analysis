@@ -1,0 +1,18 @@
+﻿# R specific
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Output files
+outputs/
+
+# Raw data files (if they're large)
+data/raw/
+
+# Processed data files (if they're large)
+data/processed/
+
+# System specific files
+.DS_Store
+Thumbs.db

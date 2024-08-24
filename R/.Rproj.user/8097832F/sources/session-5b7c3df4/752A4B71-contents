@@ -1,0 +1,48 @@
+# runner.R
+
+# Function to install and load packages
+install_and_load <- function(package) {
+  if (!require(package, character.only = TRUE, quietly = TRUE)) {
+    cat("Installing package:", package, "\n")
+    install.packages(package, dependencies = TRUE, quiet = TRUE)
+    library(package, character.only = TRUE)
+  }
+}
+
+# Install and load the here package
+install_and_load("here")
+
+# Print the current working directory
+cat("Current working directory:", getwd(), "\n")
+
+# Print the project root directory as determined by here
+cat("Project root directory:", here::here(), "\n")
+
+# Function to run R scripts
+run_r_script <- function(script_name) {
+  script_path <- file.path(here::here(), script_name)
+  cat("Looking for script at:", script_path, "\n")
+  if (file.exists(script_path)) {
+    cat("Running", script_name, "...\n")
+    source(script_path)
+    cat(script_name, "completed.\n\n")
+  } else {
+    cat("Error:", script_name, "not found at", script_path, "\n")
+  }
+}
+
+# Main execution
+main <- function() {
+  cat("Starting data processing pipeline...\n\n")
+  
+  # Run R scripts
+  run_r_script("data_downloader.R")
+  run_r_script("data_converter.R")
+  run_r_script("data_cleaning.R")
+  
+  cat("Data processing pipeline completed.\n")
+  cat("Next steps: Use Tableau to visualize the cleaned data.\n")
+}
+
+# Run the main function
+main()
