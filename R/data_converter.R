@@ -51,8 +51,12 @@ process_nc_file <- function(dir) {
 main <- function() {
   process_asc_files(dir)
   process_nc_file(dir)
+  
   cat("All processing completed.\n")
 }
 
 # Run the main function
 main()
+
+# cleanup
+closeAllConnections()
