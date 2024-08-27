@@ -50,7 +50,7 @@ This tool is ideal for:
 
 - Advanced statistical analysis of temperature trends
 - Integration with machine learning models for temperature prediction
-- Interactive data visualization dashboard
+- Interactive data visualization dashboard using Tableau
 - Geospatial analysis of temperature patterns
 - Correlation analysis with other climate indicators (e.g., CO2 levels, sea levels)
 
