@@ -35,15 +35,15 @@ run_r_script <- function(script_name) {
 
 # Function to run SQL scripts
 run_sql_script <- function(script_name) {
-  script_path <- file.path(here::here(), "sql", script_name)
+  script_path <- file.path(here::here(), "..", "sql", script_name)
   cat("Running SQL script:", script_path, "\n")
   
   # Connect to the database
   con <- dbConnect(odbc::odbc(), 
-                   Driver = "SQL Server", 
-                   Server = "KENSQL", 
-                   Database = "GlobalTemperatureAnalysis", 
-                   Trusted_Connection = "Yes")
+                 Driver = "ODBC Driver 17 for SQL Server", 
+                 Server = "localhost\\KENSQL", 
+                 Database = "master",  # Connect to 'master' first
+                 Trusted_Connection = "Yes")
   
   # Read the SQL script
   sql_script <- readLines(script_path)
