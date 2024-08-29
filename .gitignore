@@ -9,6 +9,9 @@ outputs/
 
 # Raw data files (if they're large)
 data/raw/
+.asc
+.nc
+.csv
 
 # Processed data files (if they're large)
 data/processed/
