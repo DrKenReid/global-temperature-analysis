@@ -12,6 +12,7 @@ data/raw/
 .asc
 .nc
 .csv
+.txt
 
 # Processed data files (if they're large)
 data/processed/
