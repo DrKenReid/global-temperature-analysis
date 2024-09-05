@@ -1,16 +1,12 @@
 -- 3_process_gridded_data.sql
 USE GlobalTemperatureAnalysis
 
-
 SET NOCOUNT ON
-
 
 -- Enable batch mode memory grant feedback for better performance
 ALTER DATABASE SCOPED CONFIGURATION SET BATCH_MODE_MEMORY_GRANT_FEEDBACK = ON
 
-
 PRINT 'Starting GriddedData processing at ' + CONVERT(VARCHAR, GETDATE(), 120)
-
 
 -- Check if GriddedDataStaging exists and has data
 IF OBJECT_ID('dbo.GriddedDataStaging', 'U') IS NULL
@@ -31,14 +27,12 @@ BEGIN
     END
 END
 
-
 -- Create the final GriddedData table if it doesn't exist
 IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
 BEGIN
     DROP TABLE dbo.GriddedData
     PRINT 'Existing GriddedData table dropped.'
 END
-
 
 -- Create the table with a clustered columnstore index from the start
 CREATE TABLE GriddedData (
@@ -49,52 +43,29 @@ CREATE TABLE GriddedData (
     INDEX CCI_GriddedData CLUSTERED COLUMNSTORE
 )
 
-
 PRINT 'GriddedData table created with clustered columnstore index.'
-
 
 -- Create a nonclustered index for RowID and ColumnID
 CREATE NONCLUSTERED INDEX IX_GriddedData_RowID_ColumnID ON GriddedData (RowID, ColumnID)
 
-
 PRINT 'Nonclustered index created on GriddedData.'
-
 
 -- Process the staged data
 PRINT 'Starting data processing from GriddedDataStaging to GriddedData...'
 
-
-DECLARE @BatchSize INT = 100000
-DECLARE @RowsProcessed INT = 0
-DECLARE @TotalRows INT
-
-SELECT @TotalRows = COUNT(*) FROM GriddedDataStaging
-
-WHILE @RowsProcessed < @TotalRows
-BEGIN
-    INSERT INTO GriddedData (RowID, ColumnID, Value)
+INSERT INTO GriddedData (RowID, ColumnID, Value)
+SELECT 
+    s.RowID,
+    v.ColumnID,
+    v.Value
+FROM GriddedDataStaging s
+CROSS APPLY (
     SELECT 
-        s.RowID,
-        v.ColumnID,
-        v.Value
-    FROM (
-        SELECT TOP (@BatchSize) *
-        FROM GriddedDataStaging
-        WHERE RowID > @RowsProcessed
-        ORDER BY RowID
-    ) s
-    CROSS APPLY (
-        SELECT 
-            ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS ColumnID,
-            TRY_CAST(value AS FLOAT) AS Value
-        FROM STRING_SPLIT(s.RawData, ',')
-    ) v
-    WHERE v.Value IS NOT NULL
-
-    SET @RowsProcessed = @RowsProcessed + @BatchSize
-    PRINT 'Processed ' + CAST(@RowsProcessed AS VARCHAR) + ' rows out of ' + CAST(@TotalRows AS VARCHAR)
-END
-
+        ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS ColumnID,
+        TRY_CAST(value AS FLOAT) AS Value
+    FROM STRING_SPLIT(s.RawData, ',')
+) v
+WHERE v.Value IS NOT NULL
 
 -- Verify data was inserted
 DECLARE @GriddedDataRowCount INT

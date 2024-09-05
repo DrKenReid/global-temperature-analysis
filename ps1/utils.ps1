@@ -1,22 +1,18 @@
 # utils.ps1
 
-# Setup logging
 $script:logFile = Join-Path $PSScriptRoot "import_gridded_data.log"
 
-function Start-Logging {
-    Start-Transcript -Path $script:logFile -Append
-}
-
-function Stop-Logging {
-    Stop-Transcript
+function Write-Log {
+    param([string]$message)
+    $logMessage = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff') - $message"
+    Write-Host $logMessage
+    Add-Content -Path $script:logFile -Value $logMessage
 }
 
 function Write-VerboseLog {
     param([string]$message)
     if ($script:verbose) {
-        $logMessage = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss.fff') - $message"
-        Write-Host $logMessage
-        Add-Content -Path $script:logFile -Value $logMessage
+        Write-Log $message
     }
 }
 
@@ -30,7 +26,7 @@ function Test-EnvironmentVariables {
     $missingVars = $requiredVars | Where-Object { -not (Get-Item env:$_ -ErrorAction SilentlyContinue) }
     
     if ($missingVars) {
-        Write-VerboseLog "Error: The following required environment variables are not set: $($missingVars -join ', ')"
+        Write-Log "Error: The following required environment variables are not set: $($missingVars -join ', ')"
         return $false
     }
     return $true
@@ -43,7 +39,7 @@ function Initialize-BulkCopy {
         [string]$TableName
     )
     
-    $connectionString = "Server=$ServerName;Database=$DatabaseName;Trusted_Connection=True;"
+    $connectionString = "Server=$ServerName;Database=$DatabaseName;Trusted_Connection=True;TrustServerCertificate=True;"
     $bulkCopy = New-Object ("Data.SqlClient.SqlBulkCopy") $connectionString
     $bulkCopy.DestinationTableName = $TableName
     $bulkCopy.BatchSize = 10000

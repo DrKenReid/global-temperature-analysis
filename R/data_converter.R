@@ -2,10 +2,6 @@
 
 source("utils.R")
 
-# Set working directory
-dir <- "../data/raw/"
-
-# Process .asc files
 process_asc_files <- function(dir, verbose = FALSE) {
   verbose_log("Processing .asc files...", verbose)
   output_file <- file.path(dir, "combined_time_series.csv")
@@ -27,7 +23,6 @@ process_asc_files <- function(dir, verbose = FALSE) {
   verbose_log(paste("Processed", length(file_list), ".asc files. Output saved to", output_file), verbose)
 }
 
-# Process .nc file
 process_nc_file <- function(dir, verbose = FALSE) {
   verbose_log("Processing .nc file...", verbose)
   output_file <- file.path(dir, "gridded_data.csv")
@@ -51,16 +46,14 @@ process_nc_file <- function(dir, verbose = FALSE) {
   verbose_log(paste("Processed file:", nc_file, "\nOutput saved to", output_file), verbose)
 }
 
-# Main execution
 main <- function(verbose = FALSE) {
   verbose_log("Starting data conversion process...", verbose)
+  dir <- "../data/raw/"
   process_asc_files(dir, verbose)
   process_nc_file(dir, verbose)
   verbose_log("All processing completed.", verbose)
 }
 
 # Run the main function
-main(verbose = TRUE)
-
-# cleanup
-closeAllConnections()
+verbose <- as.logical(Sys.getenv("VERBOSE"))
+main(verbose = verbose)

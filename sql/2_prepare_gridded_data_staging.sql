@@ -12,7 +12,4 @@ CREATE TABLE GriddedDataStaging (
     RawData NVARCHAR(MAX)
 )
 
--- Add a clustered columnstore index on GriddedDataStaging
-CREATE CLUSTERED COLUMNSTORE INDEX CCI_GriddedDataStaging ON GriddedDataStaging
-
 PRINT 'GriddedDataStaging table prepared for data import.'

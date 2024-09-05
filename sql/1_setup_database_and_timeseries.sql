@@ -36,7 +36,7 @@ BEGIN
     
     -- Import data from CSV file using BULK INSERT
     DECLARE @BulkInsertSQL NVARCHAR(MAX)
-    DECLARE @CSVPath NVARCHAR(255) = '$(CSV_PATH)'
+    DECLARE @CSVPath NVARCHAR(255) = '..\data\raw\combined_time_series.csv'
     
     PRINT 'CSV Path: ' + @CSVPath
     

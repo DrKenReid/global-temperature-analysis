@@ -2,14 +2,6 @@
 
 source("utils.R")
 
-# Define the URLs and destination directory
-urls <- list(
-  asc = "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/",
-  nc = "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/"
-)
-dest_dir <- "../data/raw/"
-
-# Function to download files from a given URL
 download_files <- function(base_url, pattern, dest_dir, verbose = FALSE) {
   verbose_log(paste("Downloading files from", base_url), verbose)
   tryCatch({
@@ -50,11 +42,15 @@ download_files <- function(base_url, pattern, dest_dir, verbose = FALSE) {
   })
 }
 
-# Main function to orchestrate downloads
 main <- function(verbose = FALSE) {
   verbose_log("Starting file downloads...", verbose)
   
-  # Create destination directory if it does not exist
+  urls <- list(
+    asc = "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/",
+    nc = "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/"
+  )
+  dest_dir <- "../data/raw/"
+  
   if (!dir.exists(dest_dir)) {
     dir.create(dest_dir, recursive = TRUE)
     verbose_log(paste("Created directory:", dest_dir), verbose)
@@ -62,8 +58,13 @@ main <- function(verbose = FALSE) {
   
   total_downloaded <- download_files(urls$asc, "\\.asc$", dest_dir, verbose)
   total_downloaded <- total_downloaded + download_files(urls$nc, "\\.nc$", dest_dir, verbose)
+  
   verbose_log(paste("All downloads completed. Total new files downloaded:", total_downloaded), verbose)
+  return(total_downloaded)
 }
 
 # Run the main function
-main(verbose = TRUE)
+verbose <- as.logical(Sys.getenv("VERBOSE"))
+total_downloaded <- main(verbose = verbose)
+cat(paste("Total files downloaded:", total_downloaded, "\n"))
+total_downloaded  # Return value for the script

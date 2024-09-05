@@ -1,0 +1,59 @@
+Skip to feedbackSkip to main content
+Link to NCEI's Homepage
+ 
+Global Surface Temperature Anomalies
+Search Monitoring Products
+Home
+Climate Monitoring
+Global Surface Temperature Anomalies
+ August U.S. Release: Tue, 10 Sep 2024, 11:00 AM EDT
+FAQ
+Mean Temperature Estimates
+Gridded Dataset
+Anomalies and Index Data
+Additional Websites
+References
+Background Information - FAQ
+What is a temperature anomaly?
+The term temperature anomaly means a departure from a reference value or long-term average. A positive anomaly indicates that the observed temperature was warmer than the reference value, while a negative anomaly indicates that the observed temperature was cooler than the reference value.
+
+What can the mean global temperature anomaly be used for?
+This product is a global-scale climate diagnostic tool and provides a big picture overview of average global temperatures compared to a reference value.
+
+What dataset is used in calculating the average global temperature anomaly?
+The NOAAGlobalTemp dataset is used to compute the global temperature anomalies. The land surface component is from the Global Historical Climate Network-Monthly (GHCNm), while the sea surface temperatures are from the extended reconstructed sea surface temperature (ERSST) dataset. ERSST uses the most recently available International Comprehensive Ocean-Atmosphere Data Set (ICOADS) and statistical methods that allow stable reconstruction using sparse data. Air temperature data in the Arctic Ocean region is also included from the International Comprehensive Ocean-Atmosphere dataset (ICOADS) and the International Arctic Buoy Program (IABP) .
+
+Why use temperature anomalies (departure from average) and not absolute temperature measurements?
+Absolute estimates of global average surface temperature are difficult to compile for several reasons. Some regions have few temperature measurement stations (e.g., the Sahara Desert) and interpolation must be made over large, data-sparse regions. In mountainous areas, most observations come from the inhabited valleys, so the effect of elevation on a region's average temperature must be considered as well. For example, a summer month over an area may be cooler than average, both at a mountain top and in a nearby valley, but the absolute temperatures will be quite different at the two locations. The use of anomalies in this case will show that temperatures for both locations were below average.
+
+Using reference values computed on smaller [more local] scales over the same time period establishes a baseline from which anomalies are calculated. This effectively normalizes the data so they can be compared and combined to more accurately represent temperature patterns with respect to what is normal for different places within a region.
+
+For these reasons, large-area summaries incorporate anomalies, not the temperature itself. Anomalies more accurately describe climate variability over larger areas than absolute temperatures do, and they give a frame of reference that allows more meaningful comparisons between locations and more accurate calculations of temperature trends.
+
+How is the average global temperature anomaly time-series calculated?
+The global time series is produced from the Smith and Reynolds blended land and ocean data set (Smith et al., 2008). This data set consists of monthly average temperature anomalies on a 5° x 5° grid across land and ocean surfaces. These grid boxes are then averaged to provide an average global temperature anomaly. An area-weighted scheme is used to reflect the reality that the boxes are smaller near the poles and larger near the equator. Global-average anomalies are calculated on a monthly and annual time scale. Average temperature anomalies are also available for land and ocean surfaces separately, and the Northern and Southern Hemispheres separately. The global and hemispheric anomalies are provided with respect to the period 1901-2000, the 20th century average.
+
+Why do some of the products use different reference periods?
+The global maps show temperature anomalies relative to the 1991–2020 base period. This period is used in order to comply with a recommended World Meteorological Organization (WMO) Policy, which suggests using the latest decade for the 30-year average. For the global-scale averages (global land and ocean, land-only, ocean-only, and hemispheric time series), the reference period is adjusted to the 20th Century average for conceptual simplicity (the period is more familiar to more people, and establishes a longer-term average). The adjustment does not change the shape of the time series or affect the trends within it.
+
+What is the difference between the gridded dataset and the index values?
+The land and ocean gridded dataset is a large file (~24 mb) that contains monthly temperature anomalies across the globe on a 5 deg x 5 deg grid. The anomalies are calculated with respect to the 1991–2020 base period. Gridded data is available for every month from January 1850 to the most recent month available. You can use it to examine anomalies in different regions of the earth on a month-by-month basis. The index values are an average of the gridded values; however, the global temperature anomalies are provided with respect to the 20th century (1901–2000) average. They are most useful for tracking the big-picture evolution of temperatures across larger parts of the planet, up to and including the entire global surface temperature.
+
+
+Gridded Dataset
+The data files used in the monthly global climate reports can be accessed via the links below. Please note that the temperature anomalies are with respect to the 1971–2000 average and provided in degrees Celsius.
+
+Land and Ocean Temperature Anomalies grid file using NOAAGlobalTemp version 5.1.0
+
+NOAAGlobalTemp, updated in February 2023, uses comprehensive data collections of increased global area coverage over both land and ocean surfaces. NOAAGlobalTempv5 is a reconstructed dataset, meaning that the entire period of record is recalculated each month with new data. Gridded data for every month from January 1850 to the most recent month are available in one netCDF file.
+
+GHCN version 4.0.1 land temperature anomalies monthly grid files
+
+GHCNM is the land component of the NOAAGlobalTemp dataset. Gridded data for every month from January 1850 to the most recent month is available. The data are temperature anomalies in degrees Celsius. There are 12 monthly files and one inventory file.
+
+For information on the format of the dataset, please visit our Global Historical Climatology Network page. A direct link to the file is also provided on the website.
+
+The Global Anomalies and Index Data
+Annual time series are not available for Northern/Southern Hemisphere (only Global). Anomalies are with respect to the 20th century average (1901-2000). Monthly and annual global anomalies are available through the most recent complete month and year, respectively.
+
+all data is from the website https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies/

@@ -1,19 +1,23 @@
 # utils.R
 
 # Load required packages
-required_packages <- c("here", "DBI", "odbc", "R.utils", "readr", "dplyr", "lubridate")
-
-# Function to install and load packages
-install_and_load <- function(package) {
-  if (!require(package, character.only = TRUE, quietly = TRUE)) {
-    message(paste("Installing package:", package))
-    install.packages(package, dependencies = TRUE, quiet = TRUE)
-    library(package, character.only = TRUE)
+load_required_packages <- function() {
+  required_packages <- c("here", "DBI", "odbc", "R.utils", "readr", "dplyr", "lubridate")
+  for(package in required_packages) {
+    if(!require(package, character.only = TRUE)) {
+      install.packages(package, dependencies = TRUE)
+      library(package, character.only = TRUE)
+    }
   }
 }
 
-# Install and load all required packages
-sapply(required_packages, install_and_load)
+# Set default environment variables
+set_default_env_variables <- function() {
+  if(Sys.getenv("SQL_SERVER_NAME") == "") Sys.setenv(SQL_SERVER_NAME = "(local)")
+  if(Sys.getenv("SQL_DATABASE_NAME") == "") Sys.setenv(SQL_DATABASE_NAME = "GlobalTemperatureAnalysis")
+  if(Sys.getenv("SQL_TABLE_NAME") == "") Sys.setenv(SQL_TABLE_NAME = "GriddedDataStaging")
+  if(Sys.getenv("VERBOSE") == "") Sys.setenv(VERBOSE = "FALSE")
+}
 
 # Verbose logging function
 verbose_log <- function(message, verbose = FALSE) {
@@ -23,7 +27,7 @@ verbose_log <- function(message, verbose = FALSE) {
 }
 
 # Function to check if all required environment variables are set
-check_env_variables <- function(required_vars = c("SQL_SERVER_NAME", "SQL_DATABASE_NAME", "SQL_TABLE_NAME", "CSV_PATH")) {
+check_env_variables <- function(required_vars = c("SQL_SERVER_NAME", "SQL_DATABASE_NAME", "SQL_TABLE_NAME")) {
   missing_vars <- required_vars[sapply(required_vars, function(x) Sys.getenv(x) == "")]
   
   if (length(missing_vars) > 0) {
@@ -48,6 +52,24 @@ db_connect <- function(server = Sys.getenv("SQL_SERVER_NAME"),
   }, error = function(e) {
     stop(paste("Error connecting to database:", conditionMessage(e)))
   })
+}
+
+# Function to ensure SQL Server is installed and running
+ensure_sql_server <- function() {
+  tryCatch({
+    con <- DBI::dbConnect(odbc::odbc(), 
+                          Driver = "SQL Server", 
+                          Server = Sys.getenv("SQL_SERVER_NAME"),
+                          Trusted_Connection = "Yes")
+    DBI::dbDisconnect(con)
+  }, error = function(e) {
+    stop("SQL Server is not installed or not running. Please install and start SQL Server.")
+  })
+}
+
+# Function to install PowerShell module
+install_powershell_module <- function() {
+  system("powershell -Command \"& {Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Install-Module -Name SqlServer -Force -AllowClobber -Scope CurrentUser}\"")
 }
 
 # Function to safely execute SQL queries
@@ -115,23 +137,26 @@ safe_write_csv <- function(data, file_path, verbose = FALSE) {
 # Function to run R scripts safely
 run_r_script <- function(script_name, verbose = FALSE) {
   script_path <- file.path(here::here(), script_name)
-  verbose_log(paste("Running R script:", script_path), verbose)
+  cat(paste("  Running", script_name, "...\n"))
   if (file.exists(script_path)) {
     tryCatch({
-      source(script_path, local = new.env())
-      verbose_log(paste(script_name, "completed successfully."), verbose)
+      result <- source(script_path, local = new.env())$value
+      cat(paste("  ", script_name, "completed.\n"))
+      return(result)
     }, error = function(e) {
-      warning(paste("Error running R script:", conditionMessage(e)))
+      cat(paste("  Error in", script_name, ":", conditionMessage(e), "\n"))
+      return(NULL)
     })
   } else {
-    warning(paste("R script not found:", script_path))
+    cat(paste("  R script not found:", script_path, "\n"))
+    return(NULL)
   }
 }
 
 # Function to run SQL scripts safely
 run_sql_script <- function(script_name, con, verbose = FALSE) {
   script_path <- file.path(here::here(), "..", "sql", script_name)
-  verbose_log(paste("Running SQL script:", script_path), verbose)
+  cat(paste("  Running", script_name, "...\n"))
   if (file.exists(script_path)) {
     tryCatch({
       sql_script <- readLines(script_path)
@@ -140,61 +165,76 @@ run_sql_script <- function(script_name, con, verbose = FALSE) {
       # Replace placeholders with actual values
       sql_script <- gsub("\\$\\(SQL_DATABASE_NAME\\)", Sys.getenv("SQL_DATABASE_NAME"), sql_script)
       sql_script <- gsub("\\$\\(SQL_TABLE_NAME\\)", Sys.getenv("SQL_TABLE_NAME"), sql_script)
-      sql_script <- gsub("\\$\\(CSV_PATH\\)", Sys.getenv("CSV_PATH"), sql_script)
       sql_script <- gsub("\\$\\(VERBOSE\\)", as.character(as.integer(verbose)), sql_script)
       
       # Split the script into individual statements
       statements <- strsplit(sql_script, ";")[[1]]
       
+      results <- list()
       for (stmt in statements) {
         if (trimws(stmt) != "") {
-          safe_dbExecute(con, stmt, verbose)
+          result <- safe_dbGetQuery(con, stmt, verbose)
+          if (!is.null(result)) {
+            results[[length(results) + 1]] <- result
+          }
         }
       }
-      verbose_log(paste(script_name, "completed successfully."), verbose)
+      cat(paste("  ", script_name, "completed.\n"))
+      return(results)
     }, error = function(e) {
-      warning(paste("Error running SQL script:", conditionMessage(e)))
+      cat(paste("  Error in", script_name, ":", conditionMessage(e), "\n"))
+      return(NULL)
     })
   } else {
-    warning(paste("SQL script not found:", script_path))
+    cat(paste("  SQL script not found:", script_path, "\n"))
+    return(NULL)
+  }
+}
+
+# Function to print SQL results
+print_sql_results <- function(results) {
+  for (result in results) {
+    if (is.data.frame(result)) {
+      print(result)
+    } else {
+      cat(paste0("  ", result, "\n"))
+    }
+    cat("\n")
   }
 }
 
 # Function to run PowerShell scripts safely
-run_powershell_script <- function(script_name, timeout = 3600, verbose = FALSE) {
-  script_path <- file.path(here::here(), "..", "sql", script_name)
+run_powershell_script <- function(script_name, verbose = FALSE) {
+  project_root <- dirname(here::here())
+  script_path <- file.path(project_root, "ps1", script_name)
+  if (!verbose) {
+    cat(paste("  Running", script_name, "...\n"))
+  }
   verbose_log(paste("Running PowerShell script:", script_path), verbose)
   
   if (file.exists(script_path)) {
-    relative_script_path <- file.path("..", "sql", script_name)
     original_wd <- getwd()
-    setwd(here::here())
+    setwd(project_root)
     
     verbose_flag <- if (verbose) "-Verbose" else ""
     
-    result <- tryCatch({
-      withTimeout({
-        system2("powershell", 
-                args = c("-ExecutionPolicy", "Bypass", "-File", relative_script_path, verbose_flag),
-                stdout = TRUE, stderr = TRUE, wait = FALSE, timeout = timeout)
-      }, timeout = timeout)
-    }, TimeoutException = function(ex) {
-      warning(paste("PowerShell script execution timed out after", timeout, "seconds."))
-      return(NULL)
-    }, error = function(e) {
-      warning(paste("Error running PowerShell script:", conditionMessage(e)))
-      return(NULL)
-    })
+    result <- system2("powershell", 
+                      args = c("-ExecutionPolicy", "Bypass", "-File", script_path, verbose_flag),
+                      stdout = TRUE, stderr = TRUE, wait = TRUE)
     
     setwd(original_wd)
     
-    if (!is.null(result)) {
+    if (verbose) {
       verbose_log("PowerShell script output:", verbose)
       verbose_log(paste(result, collapse = "\n"), verbose)
     }
+    if (!verbose) {
+      cat(paste(script_name, "completed.\n"))
+    }
     verbose_log(paste(script_name, "completed."), verbose)
   } else {
-    warning(paste("PowerShell script not found:", script_path))
+    cat(paste("PowerShell script not found:", script_path, "\n"))
+    verbose_log(paste("PowerShell script not found:", script_path), verbose)
   }
 }
 
