@@ -1,112 +1,120 @@
 # 🌡️ Global Temperature Analysis Project 🌍
 
-⚠️ **DISCLAIMER: WORK IN PROGRESS** ⚠️
+A comprehensive data analysis pipeline for NOAA global temperature data, using R, SQL Server, and PowerShell.
 
-**This project is currently under active development and is not yet complete. Features, documentation, and code are subject to change. Use with caution and expect frequent updates.**
+## 📋 Data Source
 
----
+Uses NOAAGlobalTemp dataset, including:
+- Global Historical Climate Network-Monthly (GHCNm) for land
+- Extended Reconstructed Sea Surface Temperature (ERSST) for sea
+- ICOADS and IABP for Arctic Ocean
 
-This repository contains a comprehensive data analysis pipeline for global temperature data, implemented using R, SQL Server, and PowerShell. The project aims to process, clean, and analyze historical temperature data from NOAA to uncover trends and insights about global climate patterns.
+## 📊 Dataset Details
 
-## 📋 Contents
+1. **Time Series Data**: `combined_time_series.csv` (1850-present, anomalies vs. 1901-2000 average)
+2. **Gridded Data**: `gridded_data.csv` (5° x 5° grid, anomalies vs. 1991-2020 base)
 
-1. **Data Download and Conversion**: R scripts to download raw temperature data from NOAA and convert it to a usable format.
-2. **SQL Database Operations**: SQL scripts for creating the database schema, importing data, and performing initial data cleaning.
-3. **Data Processing Pipeline**: A combination of R, SQL, and PowerShell scripts that work together to process and analyze the temperature data.
-4. **Data Cleaning and Analysis**: SQL scripts for detailed data cleaning, outlier detection, and basic statistical analysis.
-5. **CSV Export**: Functionality to export processed data and analysis results to CSV files for further use or visualization in other tools.
+## 🛠️ Project Components
+
+1. Data Download and Conversion (R)
+2. SQL Database Operations
+3. Data Processing Pipeline (R, SQL, PowerShell)
+4. Data Cleaning and Analysis (SQL)
+5. CSV Export
+
+## 📁 Project Structure
+
+```
+temperature-analysis-project/
+│
+├── data/
+│   ├── raw/
+│   │   ├── combined_time_series.csv
+│   │   └── gridded_data.csv
+│   └── processed/
+│
+├── R/
+│   ├── data_converter.R
+│   ├── data_downloader.R
+│   ├── runner.R
+│   └── utils.R
+│
+├── sql/
+│   ├── 1_setup_database_and_timeseries.sql
+│   ├── 2_prepare_gridded_data_staging.sql
+│   ├── 3_process_gridded_data.sql
+│   ├── 4_data_exploration.sql
+│   └── verify_data_processing.sql
+│
+└── ps1/
+    ├── import-gridded-data.ps1
+    └── utils.ps1
+```
 
 ## 👥 Who is this for?
 
-This tool is ideal for:
-- Climate researchers looking to analyze historical temperature trends
-- Data scientists interested in working with large-scale environmental data
-- Anyone curious about global temperature patterns and climate change indicators
+- Climate researchers
+- Data scientists working with environmental data
+- Anyone interested in global temperature patterns
 
 ## ✨ Features
 
-- Downloads and processes raw temperature data from NOAA's NOAAGlobalTemp dataset
-- Implements a robust SQL database for efficient data storage and querying
-- Performs comprehensive data cleaning, including handling missing values and outlier detection
-- Calculates basic statistics and identifies temperature trends over time
-- Exports processed data and analysis results for further use
-- Utilizes a combination of R, SQL, and PowerShell for a powerful and flexible data processing pipeline
+- Processes raw NOAA temperature data
+- Robust SQL database for data storage and querying
+- Comprehensive data cleaning and analysis
+- Calculates statistics and identifies temperature trends
+- Exports results for further use
 
 ## 🛠️ Requirements
-- R (version 3.6.0 or higher)
-- SQL Server (2019 or higher)
-- PowerShell (version 5.1 or higher)
-- R packages: here, DBI, odbc (install using `install.packages(c("here", "DBI", "odbc"))`)
-- SqlServer PowerShell module (install using the instructions below)
 
-### Installing the SqlServer PowerShell Module
-Before running the scripts, you need to install the SqlServer PowerShell module. Follow these steps:
-1. Open PowerShell as an administrator
-2. Run the following command:
+<table>
+<tr>
+<td>
+
+- R (3.6.0+)
+- SQL Server (2019+)
+- PowerShell (5.1+)
+
+</td>
+<td>
+
+- R packages: here, DBI, odbc, rvest, httr
+- SqlServer PowerShell module
+
+</td>
+</tr>
+</table>
+
+### Installing SqlServer PowerShell Module
+
 ```powershell
 Install-Module -Name SqlServer -Scope CurrentUser -Force -AllowClobber
 ```
-3. If prompted about installing from an untrusted repository, type 'Y' and press Enter to continue the installation.
-
-This module is required for the PowerShell scripts to interact with SQL Server effectively.
-
-## 🚀 Environment Setup
-Before running the scripts, you need to set up the following environment variables:
-- `SQL_SERVER_NAME`: The name of your SQL Server instance
-- `SQL_DATABASE_NAME`: The name of the database (default: GlobalTemperatureAnalysis)
-- `SQL_TABLE_NAME`: The name of the table for gridded data (default: GriddedDataStaging)
-- `CSV_PATH`: The path to your gridded data CSV file
-- `GLOBAL_TEMP_VERBOSE`: Set to "TRUE" for verbose logging (optional)
-
-### Windows
-Run the following commands in PowerShell:
-```powershell
-[Environment]::SetEnvironmentVariable("SQL_SERVER_NAME", "your_server_name", "User")
-[Environment]::SetEnvironmentVariable("SQL_DATABASE_NAME", "GlobalTemperatureAnalysis", "User")
-[Environment]::SetEnvironmentVariable("SQL_TABLE_NAME", "GriddedDataStaging", "User")
-[Environment]::SetEnvironmentVariable("CSV_PATH", "C:\path\to\your\gridded_data.csv", "User")
-[Environment]::SetEnvironmentVariable("GLOBAL_TEMP_VERBOSE", "TRUE", "User")
-```
-
-### macOS and Linux
-Add the following lines to your `~/.bash_profile` (macOS) or `~/.bashrc` (Linux):
-```bash
-export SQL_SERVER_NAME="your_server_name"
-export SQL_DATABASE_NAME="GlobalTemperatureAnalysis"
-export SQL_TABLE_NAME="GriddedDataStaging"
-export CSV_PATH="/path/to/your/gridded_data.csv"
-export GLOBAL_TEMP_VERBOSE="TRUE"
-```
-Then, run `source ~/.bash_profile` (macOS) or `source ~/.bashrc` (Linux) to apply the changes.
 
 ## 🚀 How to Use
 
-1. Ensure you have R, SQL Server, and PowerShell installed on your system.
-2. Clone this repository to your local machine.
-3. Set up the environment variables as described in the Environment Setup section.
-4. Run the `runner.R` script to start the data processing pipeline.
-5. Check the `data/processed` directory for output CSV files containing analysis results.
+1. Install required software and modules
+2. Clone the repository
+3. Set working directory to `R/` folder
+4. Run `runner.R`
+5. Check `data/processed/` for results
 
 ## 🔜 Upcoming Features
 
-- Advanced statistical analysis of temperature trends
-- Integration with machine learning models for temperature prediction
-- Interactive data visualization dashboard using Tableau
-- Geospatial analysis of temperature patterns
-- Correlation analysis with other climate indicators (e.g., CO2 levels, sea levels)
+- Advanced statistical analysis
+- Machine learning integration
+- Interactive visualization dashboard
+- Geospatial analysis
+- Correlation with other climate indicators
 
 ## 🤝 Contributions
 
-Contributions, bug reports, and feature requests are welcome! Feel free to open an issue or submit a pull request.
+Contributions, bug reports, and feature requests are welcome!
 
-## 📜 Data Source and Citation
+## 📜 Data Use and Citation
 
-This project uses the NOAAGlobalTemp dataset provided by the National Oceanic and Atmospheric Administration (NOAA). 
-
-For more information about the dataset and its use, please visit the [NOAA Global Surface Temperature Anomalies](https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies/) page.
+Thanks to NOAA for the data: https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-Analyze global temperatures and contribute to climate research! 🌡️🔬
+MIT License
