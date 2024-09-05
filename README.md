@@ -6,11 +6,11 @@
 
 ---
 
-This repository contains a comprehensive data analysis pipeline for global temperature data, implemented using R, SQL Server, and PowerShell. The project aims to process, clean, and analyze historical temperature data to uncover trends and insights about global climate patterns.
+This repository contains a comprehensive data analysis pipeline for global temperature data, implemented using R, SQL Server, and PowerShell. The project aims to process, clean, and analyze historical temperature data from NOAA to uncover trends and insights about global climate patterns.
 
 ## 📋 Contents
 
-1. **Data Download and Conversion**: R scripts to download raw temperature data and convert it to a usable format.
+1. **Data Download and Conversion**: R scripts to download raw temperature data from NOAA and convert it to a usable format.
 2. **SQL Database Operations**: SQL scripts for creating the database schema, importing data, and performing initial data cleaning.
 3. **Data Processing Pipeline**: A combination of R, SQL, and PowerShell scripts that work together to process and analyze the temperature data.
 4. **Data Cleaning and Analysis**: SQL scripts for detailed data cleaning, outlier detection, and basic statistical analysis.
@@ -25,7 +25,7 @@ This tool is ideal for:
 
 ## ✨ Features
 
-- Downloads and processes raw temperature data from reliable sources
+- Downloads and processes raw temperature data from NOAA's NOAAGlobalTemp dataset
 - Implements a robust SQL database for efficient data storage and querying
 - Performs comprehensive data cleaning, including handling missing values and outlier detection
 - Calculates basic statistics and identifies temperature trends over time
@@ -98,6 +98,12 @@ Then, run `source ~/.bash_profile` (macOS) or `source ~/.bashrc` (Linux) to appl
 ## 🤝 Contributions
 
 Contributions, bug reports, and feature requests are welcome! Feel free to open an issue or submit a pull request.
+
+## 📜 Data Source and Citation
+
+This project uses the NOAAGlobalTemp dataset provided by the National Oceanic and Atmospheric Administration (NOAA). 
+
+For more information about the dataset and its use, please visit the [NOAA Global Surface Temperature Anomalies](https://www.ncei.noaa.gov/access/monitoring/global-temperature-anomalies/) page.
 
 ## 📄 License
 
