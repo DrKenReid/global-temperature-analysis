@@ -95,9 +95,32 @@ Install-Module -Name SqlServer -Scope CurrentUser -Force -AllowClobber
 
 1. Install required software and modules
 2. Clone the repository
-3. Set working directory to `R/` folder
-4. Run `runner.R`
-5. Check `data/processed/` for results
+3. Set the following environment variables:
+   - `SQL_SERVER_NAME`: Your SQL Server instance name
+   - `SQL_DATABASE_NAME`: Name of the database (default: GlobalTemperatureAnalysis)
+   - `SQL_TABLE_NAME`: Name of the gridded data table (default: GriddedDataStaging)
+   - `VERBOSE`: Set to "TRUE" for detailed logging, "FALSE" for minimal output
+4. Open R or RStudio and set the working directory to the `R/` folder
+5. Run `runner.R`
+6. Check `data/processed/` for results and the SQL database for exploration data
+
+### Setting Environment Variables
+
+#### Windows (PowerShell):
+```powershell
+$env:SQL_SERVER_NAME = "your_server_name"
+$env:SQL_DATABASE_NAME = "GlobalTemperatureAnalysis"
+$env:SQL_TABLE_NAME = "GriddedDataStaging"
+$env:VERBOSE = "FALSE"
+```
+
+#### macOS/Linux:
+```bash
+export SQL_SERVER_NAME="your_server_name"
+export SQL_DATABASE_NAME="GlobalTemperatureAnalysis"
+export SQL_TABLE_NAME="GriddedDataStaging"
+export VERBOSE="FALSE"
+```
 
 ## 🔜 Upcoming Features
 
@@ -113,7 +136,7 @@ Contributions, bug reports, and feature requests are welcome!
 
 ## 📜 Data Use and Citation
 
-Thanks to NOAA for the data: https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series
+When using this data, cite: NOAA National Centers for Environmental Information, Climate at a Glance: Global Time Series, published [Month] 2024, retrieved on [Date] from https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series
 
 ## 📄 License
 
