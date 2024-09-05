@@ -1,0 +1,48 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240904214846
+Username: EDI\Ken
+RunAs User: EDI\Ken
+Configuration Name: 
+Machine: EDI (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File ../sql/import-gridded-data.ps1 -Verbose
+Process ID: 11668
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Ken\temperature-analysis-project\sql\import_gridded_data.log
+PS>TerminatingError(): "Exception calling "WriteToServer" with "1" argument(s): "The given ColumnMapping does not match up with any column in the source or destination.""
+**********************
+Windows PowerShell transcript end
+End time: 20240904214852
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20240904215112
+Username: EDI\Ken
+RunAs User: EDI\Ken
+Configuration Name: 
+Machine: EDI (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File ../sql/import-gridded-data.ps1 -Verbose
+Process ID: 23348
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Ken\temperature-analysis-project\sql\import_gridded_data.log
+PS>TerminatingError(Invoke-Sqlcmd): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)"
+**********************
+Windows PowerShell transcript end
+End time: 20240904215113
+**********************

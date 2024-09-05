@@ -1,18 +1,14 @@
 -- 1_setup_database_and_timeseries.sql
--- Create the GlobalTemperatureAnalysis database if it doesn't exist
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'GlobalTemperatureAnalysis')
-BEGIN
-    CREATE DATABASE GlobalTemperatureAnalysis;
-END;
-GO
+USE [$(SQL_DATABASE_NAME)]
 
--- Use the GlobalTemperatureAnalysis database
-USE GlobalTemperatureAnalysis;
-GO
+SET NOCOUNT ON
+
+PRINT 'Starting database setup and TimeSeries table creation...'
 
 -- Create a table for the time series data if it doesn't exist
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TimeSeries]') AND type = N'U')
 BEGIN
+    PRINT 'Creating TimeSeries table...'
     CREATE TABLE TimeSeries (
         Year INT NOT NULL,
         Temperature FLOAT NOT NULL,
@@ -25,25 +21,68 @@ BEGIN
         V9 VARCHAR(50),
         V10 VARCHAR(50),
         CONSTRAINT PK_TimeSeries PRIMARY KEY CLUSTERED (Year)
-    );
-END;
+    )
+    PRINT 'TimeSeries table created successfully.'
+END
+ELSE
+BEGIN
+    PRINT 'TimeSeries table already exists.'
+END
 
--- Import data from CSV file using BULK INSERT if the table is empty
+-- Check if data exists in the TimeSeries table
 IF NOT EXISTS (SELECT TOP 1 * FROM TimeSeries)
 BEGIN
-    BULK INSERT TimeSeries
-    FROM 'C:\Users\Ken\temperature-analysis-project\data\raw\combined_time_series.csv'
+    PRINT 'TimeSeries table is empty. Attempting to import data...'
+    
+    -- Import data from CSV file using BULK INSERT
+    DECLARE @BulkInsertSQL NVARCHAR(MAX)
+    DECLARE @CSVPath NVARCHAR(255) = '$(CSV_PATH)'
+    
+    PRINT 'CSV Path: ' + @CSVPath
+    
+    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TimeSeries]') AND type = N'U')
+    BEGIN
+        PRINT 'Error: TimeSeries table does not exist.'
+        RETURN
+    END
+    
+    IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'[dbo].[TimeSeries]'))
+    BEGIN
+        PRINT 'Error: TimeSeries table has no columns.'
+        RETURN
+    END
+    
+    SET @BulkInsertSQL = 'BULK INSERT TimeSeries
+    FROM ''' + @CSVPath + '''
     WITH (
-        FORMAT = 'CSV',
+        FORMAT = ''CSV'',
         FIRSTROW = 2,
+        FIELDTERMINATOR = '','',
+        ROWTERMINATOR = ''\n'',
         TABLOCK
-    );
-END;
-
--- Create indexes to improve query performance if they don't already exist
-IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = N'IX_TimeSeries_Temperature' AND object_id = OBJECT_ID(N'[dbo].[TimeSeries]'))
+    )'
+    
+    PRINT 'Executing BULK INSERT with SQL: ' + @BulkInsertSQL
+    
+    BEGIN TRY
+        EXEC sp_executesql @BulkInsertSQL
+        PRINT 'Data imported successfully into TimeSeries table.'
+    END TRY
+    BEGIN CATCH
+        PRINT 'Error occurred while importing data:'
+        PRINT ERROR_MESSAGE()
+    END CATCH
+END
+ELSE
 BEGIN
-    CREATE NONCLUSTERED INDEX IX_TimeSeries_Temperature ON TimeSeries(Temperature);
-END;
+    PRINT 'TimeSeries table already contains data.'
+END
 
-PRINT 'Database setup and TimeSeries table creation completed.';
+-- Print some statistics about the TimeSeries table
+PRINT 'TimeSeries table statistics:'
+SELECT 
+    'Total Rows' = COUNT(*),
+    'Min Year' = MIN(Year),
+    'Max Year' = MAX(Year),
+    'Avg Temperature' = AVG(Temperature)
+FROM TimeSeries

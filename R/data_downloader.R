@@ -1,15 +1,6 @@
-# Function to install and load packages
-install_and_load <- function(package) {
-  if (!require(package, character.only = TRUE, quietly = TRUE)) {
-    cat("Installing package:", package, "\n")
-    install.packages(package, dependencies = TRUE, quiet = TRUE)
-    library(package, character.only = TRUE)
-  }
-}
+# data_downloader.R
 
-# Install and load required packages
-packages <- c("httr", "rvest")
-sapply(packages, install_and_load)
+source("utils.R")
 
 # Define the URLs and destination directory
 urls <- list(
@@ -18,58 +9,61 @@ urls <- list(
 )
 dest_dir <- "../data/raw/"
 
-# Create destination directory if it does not exist
-if (!dir.exists(dest_dir)) {
-  dir.create(dest_dir, recursive = TRUE)
-  cat("Created directory:", dest_dir, "\n")
-}
-
 # Function to download files from a given URL
-download_files <- function(base_url, pattern, dest_dir) {
+download_files <- function(base_url, pattern, dest_dir, verbose = FALSE) {
+  verbose_log(paste("Downloading files from", base_url), verbose)
   tryCatch({
-    # Read the webpage
-    webpage <- read_html(base_url)
-    
-    # Extract links that match the file extension pattern
+    webpage <- rvest::read_html(base_url)
     links <- webpage %>%
-      html_nodes("a") %>%
-      html_attr("href") %>%
+      rvest::html_nodes("a") %>%
+      rvest::html_attr("href") %>%
       .[grepl(pattern, .)]
     
     if (length(links) == 0) {
-      cat("No files matching pattern", pattern, "found at", base_url, "\n")
-      return()
+      verbose_log(paste("No files matching pattern", pattern, "found at", base_url), verbose)
+      return(0)
     }
     
-    # Define the full URLs of the files
     file_urls <- paste0(base_url, links)
+    files_existing <- 0
+    files_downloaded <- 0
     
-    # Download each file
     for (file_url in file_urls) {
       file_name <- basename(file_url)
       file_path <- file.path(dest_dir, file_name)
       
-      # Check if file already exists
       if (file.exists(file_path)) {
-        cat("File already exists, skipping:", file_name, "\n")
+        files_existing <- files_existing + 1
+        verbose_log(paste("File already exists:", file_name), verbose)
       } else {
-        # Download file
-        GET(file_url, write_disk(file_path, overwrite = TRUE))
-        cat("Downloaded:", file_name, "\n")
+        httr::GET(file_url, httr::write_disk(file_path, overwrite = TRUE))
+        files_downloaded <- files_downloaded + 1
+        verbose_log(paste("Downloaded:", file_name), verbose)
       }
     }
+    
+    verbose_log(paste(files_existing, "files were already downloaded,", files_downloaded, "have now been downloaded."), verbose)
+    return(files_downloaded)
   }, error = function(e) {
-    cat("Error occurred while downloading files from", base_url, ":", conditionMessage(e), "\n")
+    verbose_log(paste("Error occurred while downloading files from", base_url, ":", conditionMessage(e)), verbose)
+    return(0)
   })
 }
 
 # Main function to orchestrate downloads
-main <- function() {
-  cat("Starting file downloads...\n")
-  download_files(urls$asc, "\\.asc$", dest_dir)
-  download_files(urls$nc, "\\.nc$", dest_dir)
-  cat("All downloads completed.\n")
+main <- function(verbose = FALSE) {
+  verbose_log("Starting file downloads...", verbose)
+  
+  # Create destination directory if it does not exist
+  if (!dir.exists(dest_dir)) {
+    dir.create(dest_dir, recursive = TRUE)
+    verbose_log(paste("Created directory:", dest_dir), verbose)
+  }
+  
+  total_downloaded <- download_files(urls$asc, "\\.asc$", dest_dir, verbose)
+  total_downloaded <- total_downloaded + download_files(urls$nc, "\\.nc$", dest_dir, verbose)
+  verbose_log(paste("All downloads completed. Total new files downloaded:", total_downloaded), verbose)
 }
 
 # Run the main function
-main()
+main(verbose = TRUE)
