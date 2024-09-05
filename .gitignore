@@ -5,17 +5,20 @@
 .Ruserdata
 
 # Output files
-outputs/
+outputs/*
+!outputs/.gitkeep
 
 # Raw data files (if they're large)
-data/raw/
+data/raw/*
+!data/raw/.gitkeep
 .asc
 .nc
 .csv
 .txt
 
 # Processed data files (if they're large)
-data/processed/
+data/processed/*
+!data/processed/.gitkeep
 
 # System specific files
 .DS_Store
