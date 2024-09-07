@@ -36,19 +36,23 @@ BEGIN
     
     -- Import data from CSV file using BULK INSERT
     DECLARE @BulkInsertSQL NVARCHAR(MAX)
-    DECLARE @CSVPath NVARCHAR(255) = '..\data\raw\combined_time_series.csv'
+    DECLARE @CSVPath NVARCHAR(255) = '$(CSV_PATH)'
     
     PRINT 'CSV Path: ' + @CSVPath
     
-    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TimeSeries]') AND type = N'U')
+    -- Check if the CSV file exists
+    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'xp_fileexist'))
     BEGIN
-        PRINT 'Error: TimeSeries table does not exist.'
+        PRINT 'Error: xp_fileexist stored procedure is not available.'
         RETURN
     END
     
-    IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'[dbo].[TimeSeries]'))
+    DECLARE @FileExists INT
+    EXEC master.dbo.xp_fileexist @CSVPath, @FileExists OUTPUT
+    
+    IF @FileExists = 0
     BEGIN
-        PRINT 'Error: TimeSeries table has no columns.'
+        PRINT 'Error: CSV file does not exist at path: ' + @CSVPath
         RETURN
     END
     
@@ -66,11 +70,19 @@ BEGIN
     
     BEGIN TRY
         EXEC sp_executesql @BulkInsertSQL
-        PRINT 'Data imported successfully into TimeSeries table.'
+        
+        -- Check the number of rows imported
+        DECLARE @RowCount INT
+        SELECT @RowCount = COUNT(*) FROM TimeSeries
+        PRINT 'Data imported successfully into TimeSeries table. Rows imported: ' + CAST(@RowCount AS NVARCHAR(20))
     END TRY
     BEGIN CATCH
         PRINT 'Error occurred while importing data:'
         PRINT ERROR_MESSAGE()
+        PRINT 'Error Line: ' + CAST(ERROR_LINE() AS NVARCHAR(10))
+        PRINT 'Error Number: ' + CAST(ERROR_NUMBER() AS NVARCHAR(10))
+        PRINT 'Error Severity: ' + CAST(ERROR_SEVERITY() AS NVARCHAR(10))
+        PRINT 'Error State: ' + CAST(ERROR_STATE() AS NVARCHAR(10))
     END CATCH
 END
 ELSE

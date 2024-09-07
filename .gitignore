@@ -7,6 +7,7 @@
 # Output files
 outputs/*
 !outputs/.gitkeep
+.log
 
 # Raw data files (if they're large)
 data/raw/*
