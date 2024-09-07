@@ -21,6 +21,7 @@ Uses NOAAGlobalTemp dataset, including:
 3. Data Processing Pipeline (R, SQL, PowerShell)
 4. Data Cleaning and Analysis (SQL)
 5. CSV Export
+6. Enhanced Error Handling and Logging
 
 ## 📁 Project Structure
 
@@ -44,7 +45,13 @@ temperature-analysis-project/
 │   ├── 2_prepare_gridded_data_staging.sql
 │   ├── 3_process_gridded_data.sql
 │   ├── 4_data_exploration.sql
-│   └── verify_data_processing.sql
+│   ├── 5_verify_data_processing.sql
+│   ├── 6_verify_data_exploration.sql
+│   ├── check_griddeddatastaging_table.sql
+│   ├── check_timeseries_table.sql
+│   ├── create_exploration_results_table.sql
+│   ├── GetTableRowCount.sql
+│   └── TableExists.sql
 │
 └── ps1/
     ├── import-gridded-data.ps1
@@ -59,68 +66,44 @@ temperature-analysis-project/
 
 ## ✨ Features
 
-- Processes raw NOAA temperature data
+- Automated data download and processing of raw NOAA temperature data
 - Robust SQL database for data storage and querying
 - Comprehensive data cleaning and analysis
 - Calculates statistics and identifies temperature trends
 - Exports results for further use
+- Enhanced error handling and detailed logging
+- Improved data consistency checks
+- Modular SQL script execution
+- Automated database setup and table creation
 
 ## 🛠️ Requirements
-
-<table>
-<tr>
-<td>
 
 - R (3.6.0+)
 - SQL Server (2019+)
 - PowerShell (5.1+)
 
-</td>
-<td>
-
-- R packages: here, DBI, odbc, rvest, httr
-- SqlServer PowerShell module
-
-</td>
-</tr>
-</table>
-
-### Installing SqlServer PowerShell Module
-
-```powershell
-Install-Module -Name SqlServer -Scope CurrentUser -Force -AllowClobber
-```
+R packages: here, DBI, odbc, rvest, httr, jsonlite, lubridate, dplyr, readr
 
 ## 🚀 How to Use
 
-1. Install required software and modules
+1. Ensure you have R, SQL Server, and PowerShell installed on your system
 2. Clone the repository
-3. Set the following environment variables:
-   - `SQL_SERVER_NAME`: Your SQL Server instance name
-   - `SQL_DATABASE_NAME`: Name of the database (default: GlobalTemperatureAnalysis)
-   - `SQL_TABLE_NAME`: Name of the gridded data table (default: GriddedDataStaging)
-   - `VERBOSE`: Set to "TRUE" for detailed logging, "FALSE" for minimal output
-4. Open R or RStudio and set the working directory to the `R/` folder
-5. Run `runner.R`
-6. Check `data/processed/` for results and the SQL database for exploration data
+3. Open R or RStudio and set the working directory to the `R/` folder
+4. Run `runner.R`
+5. Check `data/processed/` for results and the SQL database for exploration data
 
-### Setting Environment Variables
+The script will automatically handle database setup, data download, and processing.
 
-#### Windows (PowerShell):
-```powershell
-$env:SQL_SERVER_NAME = "your_server_name"
-$env:SQL_DATABASE_NAME = "GlobalTemperatureAnalysis"
-$env:SQL_TABLE_NAME = "GriddedDataStaging"
-$env:VERBOSE = "FALSE"
-```
+## 🔍 Key Features
 
-#### macOS/Linux:
-```bash
-export SQL_SERVER_NAME="your_server_name"
-export SQL_DATABASE_NAME="GlobalTemperatureAnalysis"
-export SQL_TABLE_NAME="GriddedDataStaging"
-export VERBOSE="FALSE"
-```
+- Automated data download and conversion
+- SQL database creation and management
+- Enhanced error handling and logging in R scripts
+- Improved SQL script execution with support for multiple statements
+- Automated database and table creation
+- Data consistency checks for TimeSeries and GriddedData tables
+- Detailed diagnostic queries for data verification
+- PowerShell script integration for efficient data import
 
 ## 🔜 Upcoming Features
 
