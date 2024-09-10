@@ -41,21 +41,18 @@ temperature-analysis-project/
 │   └── utils.R
 │
 ├── sql/
-│   ├── 1_setup_database_and_timeseries.sql
-│   ├── 2_prepare_gridded_data_staging.sql
-│   ├── 3_process_gridded_data.sql
-│   ├── 4_data_exploration.sql
-│   ├── 5_verify_data_processing.sql
-│   ├── 6_verify_data_exploration.sql
-│   ├── check_griddeddatastaging_table.sql
-│   ├── check_timeseries_table.sql
-│   ├── create_exploration_results_table.sql
-│   ├── GetTableRowCount.sql
-│   └── TableExists.sql
-│
-└── ps1/
-    ├── import-gridded-data.ps1
-    └── utils.ps1
+├   ├── 1_setup_database_and_timeseries.sql
+    ├── 2_prepare_gridded_data_staging.sql
+    ├── 3_process_gridded_data.sql
+    ├── 4_data_exploration.sql
+    ├── 5_verify_data_processing.sql
+    ├── 6_verify_data_exploration.sql
+    ├── check_griddeddatastaging_table.sql
+    ├── check_timeseries_table.sql
+    ├── create_exploration_results_table.sql
+    ├── GetTableRowCount.sql
+    └── TableExists.sql
+
 ```
 
 ## 👥 Who is this for?
