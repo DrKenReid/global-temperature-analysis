@@ -4804,3 +4804,3209 @@ Output saved to ../data/raw//gridded_data.csv
 
 [2024-09-06 22:44:18] INFO: Data processing pipeline completed. Data exploration results available in the database
 
+[2024-09-07 10:40:00] INFO: Starting data processing pipeline
+
+[2024-09-07 10:40:53] INFO: Starting data processing pipeline
+
+[2024-09-07 10:41:09] INFO: Starting file check and download process
+
+[2024-09-07 10:41:09] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 10:41:09] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 10:41:10] INFO: Downloaded: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:10] INFO: Downloaded: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:10] INFO: Downloaded: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:10] INFO: Downloaded: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:10] INFO: Downloaded: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:11] INFO: Downloaded: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:12] INFO: Downloaded: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:13] INFO: Downloaded: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:13] INFO: Downloaded: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:13] INFO: Downloaded: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:13] INFO: Downloaded: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:13] INFO: Downloaded: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:14] INFO: Downloaded: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:15] INFO: Downloaded: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:16] INFO: Downloaded: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:16] INFO: Downloaded: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:16] INFO: Downloaded: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:16] INFO: Downloaded: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:16] INFO: Downloaded: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:17] INFO: Downloaded: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:18] INFO: Downloaded: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:18] INFO: Downloaded: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:18] INFO: Downloaded: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:19] INFO: Downloaded: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:19] INFO: Downloaded: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:19] INFO: Downloaded: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:20] INFO: Downloaded: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:20] INFO: Downloaded: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:20] INFO: Downloaded: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:21] INFO: Downloaded: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:21] INFO: Downloaded: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:21] INFO: Downloaded: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:22] INFO: Downloaded: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:22] INFO: Downloaded: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:22] INFO: Downloaded: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:23] INFO: Downloaded: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:23] INFO: Downloaded: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:24] INFO: Downloaded: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:24] INFO: Downloaded: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:24] INFO: Downloaded: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:25] INFO: Downloaded: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:25] INFO: Downloaded: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:25] INFO: Downloaded: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:26] INFO: Downloaded: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:26] INFO: Downloaded: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:26] INFO: Downloaded: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:27] INFO: Downloaded: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:27] INFO: Downloaded: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:27] INFO: Downloaded: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:28] INFO: Downloaded: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:28] INFO: Downloaded: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:28] INFO: Downloaded: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:29] INFO: Downloaded: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:29] INFO: Downloaded: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:29] INFO: Downloaded: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:30] INFO: Downloaded: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:30] INFO: Downloaded: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:30] INFO: Downloaded: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:30] INFO: 0 files were already downloaded, 78 have now been downloaded.
+
+[2024-09-07 10:41:30] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 10:41:32] INFO: Downloaded: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:41:32] INFO: 0 files were already downloaded, 1 have now been downloaded.
+
+[2024-09-07 10:41:32] INFO: All downloads completed. Total new files downloaded: 79
+
+[2024-09-07 10:41:32] INFO: Total files downloaded: 79
+
+[2024-09-07 10:41:32] INFO: Total files downloaded: 79
+
+[2024-09-07 10:41:32] INFO: Downloaded 79 new files
+
+[2024-09-07 10:41:32] INFO: Starting data conversion process...
+
+[2024-09-07 10:41:32] INFO: Processing .asc files...
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:32] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:41:33] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:41:34] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:41:34] INFO: Processing .nc file...
+
+[2024-09-07 10:41:34] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:41:35] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 10:41:35] INFO: Data Conversion Summary:
+
+[2024-09-07 10:41:35] INFO: ASC files processed: 78
+
+[2024-09-07 10:41:35] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:41:35] INFO: TimeSeries rows: 88452
+
+[2024-09-07 10:41:35] INFO: NC files processed: 1
+
+[2024-09-07 10:41:35] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 10:41:35] INFO: GriddedData rows: 72
+
+[2024-09-07 10:41:35] INFO: Data conversion process completed.
+
+[2024-09-07 10:41:35] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 10:41:35] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:41:35] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 10:41:35] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 10:41:35] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:41:35] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 10:41:35] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 10:41:40] INFO: Running diagnostic queries
+
+[2024-09-07 10:41:40] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 10:41:40] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 10:41:40] INFO: Executing statement 1 of 4
+
+[2024-09-07 10:41:40] INFO: Executing statement 2 of 4
+
+[2024-09-07 10:41:40] INFO: Executing statement 3 of 4
+
+[2024-09-07 10:41:40] INFO: Executing statement 4 of 4
+
+[2024-09-07 10:41:40] INFO: check_timeseries_table.sql completed.
+
+[2024-09-07 10:41:40] INFO: GriddedDataStaging Table Diagnostics:
+
+[2024-09-07 10:41:40] INFO: Running check_griddeddatastaging_table.sql ...
+
+[2024-09-07 10:41:40] INFO: Executing statement 1 of 3
+
+[2024-09-07 10:41:40] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 10:41:40] INFO: Executing statement 1 of 28
+
+[2024-09-07 10:41:40] INFO: Executing statement 2 of 28
+
+[2024-09-07 10:41:40] INFO: Executing statement 3 of 28
+
+[2024-09-07 10:41:41] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 10:41:41] INFO: Executing statement 1 of 11
+
+[2024-09-07 10:41:41] INFO: Executing statement 2 of 11
+
+[2024-09-07 10:41:41] INFO: Executing statement 3 of 11
+
+[2024-09-07 10:41:41] INFO: Executing statement 4 of 11
+
+[2024-09-07 10:41:41] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 10:41:41] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 10:41:41] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 10:41:41] ERROR: Table GriddedData does not exist
+
+[2024-09-07 10:41:41] ERROR: Data consistency checks failed. Please review the logs and data.
+
+[2024-09-07 10:41:41] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 10:45:45] INFO: Starting data processing pipeline
+
+[2024-09-07 10:45:58] INFO: Starting file check and download process
+
+[2024-09-07 10:45:58] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 10:45:58] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:58] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:45:58] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 10:45:59] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:45:59] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:45:59] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 10:45:59] INFO: Total files downloaded: 0
+
+[2024-09-07 10:45:59] INFO: Total files downloaded: 0
+
+[2024-09-07 10:45:59] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 10:45:59] INFO: Starting data conversion process...
+
+[2024-09-07 10:45:59] INFO: Processing .asc files...
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:45:59] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:46:00] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:46:00] INFO: Processing .nc file...
+
+[2024-09-07 10:46:00] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:46:01] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 10:46:01] INFO: Data Conversion Summary:
+
+[2024-09-07 10:46:01] INFO: ASC files processed: 78
+
+[2024-09-07 10:46:01] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:46:01] INFO: TimeSeries rows: 88452
+
+[2024-09-07 10:46:01] INFO: NC files processed: 1
+
+[2024-09-07 10:46:01] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 10:46:01] INFO: GriddedData rows: 72
+
+[2024-09-07 10:46:01] INFO: Data conversion process completed.
+
+[2024-09-07 10:46:01] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 10:46:01] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:46:01] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 10:46:01] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 10:46:01] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:46:01] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 10:46:01] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 10:46:05] INFO: Running diagnostic queries
+
+[2024-09-07 10:46:05] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 10:46:05] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 10:46:05] INFO: Executing statement 1 of 4
+
+[2024-09-07 10:46:05] INFO: Executing statement 2 of 4
+
+[2024-09-07 10:46:05] INFO: Executing statement 3 of 4
+
+[2024-09-07 10:46:05] INFO: Executing statement 4 of 4
+
+[2024-09-07 10:46:05] INFO: check_timeseries_table.sql completed.
+
+[2024-09-07 10:46:05] INFO: GriddedDataStaging Table Diagnostics:
+
+[2024-09-07 10:46:05] INFO: Running check_griddeddatastaging_table.sql ...
+
+[2024-09-07 10:46:05] INFO: Executing statement 1 of 3
+
+[2024-09-07 10:46:06] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 10:46:06] INFO: Executing statement 1 of 28
+
+[2024-09-07 10:46:06] INFO: Executing statement 2 of 28
+
+[2024-09-07 10:46:06] INFO: Executing statement 3 of 28
+
+[2024-09-07 10:46:06] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 10:46:06] INFO: Executing statement 1 of 11
+
+[2024-09-07 10:46:06] INFO: Executing statement 2 of 11
+
+[2024-09-07 10:46:06] INFO: Executing statement 3 of 11
+
+[2024-09-07 10:46:06] INFO: Executing statement 4 of 11
+
+[2024-09-07 10:46:07] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 10:46:07] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 10:46:07] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 10:46:07] ERROR: Table GriddedData does not exist
+
+[2024-09-07 10:46:07] ERROR: Data consistency checks failed. Please review the logs and data.
+
+[2024-09-07 10:46:07] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 10:46:49] INFO: Starting data processing pipeline
+
+[2024-09-07 10:47:06] INFO: Starting file check and download process
+
+[2024-09-07 10:47:06] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 10:47:06] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:47:07] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 10:47:07] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:47:07] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:47:07] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 10:47:07] INFO: Total files downloaded: 0
+
+[2024-09-07 10:47:07] INFO: Total files downloaded: 0
+
+[2024-09-07 10:47:07] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 10:47:07] INFO: Starting data conversion process...
+
+[2024-09-07 10:47:07] INFO: Processing .asc files...
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:07] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:47:08] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:47:09] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:47:09] INFO: Processing .nc file...
+
+[2024-09-07 10:47:09] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:47:12] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 10:47:12] INFO: Data Conversion Summary:
+
+[2024-09-07 10:47:12] INFO: ASC files processed: 78
+
+[2024-09-07 10:47:12] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:47:12] INFO: TimeSeries rows: 88452
+
+[2024-09-07 10:47:12] INFO: NC files processed: 1
+
+[2024-09-07 10:47:12] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 10:47:12] INFO: GriddedData rows: 72
+
+[2024-09-07 10:47:12] INFO: Data conversion process completed.
+
+[2024-09-07 10:47:12] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 10:47:12] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:47:12] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 10:47:12] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 10:47:12] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:47:12] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 10:47:12] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 10:47:12] INFO: Executing statement 1 of 5
+
+[2024-09-07 10:47:12] INFO: Executing statement 2 of 5
+
+[2024-09-07 10:47:16] INFO: Running diagnostic queries
+
+[2024-09-07 10:47:16] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 10:47:16] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 10:47:16] INFO: Executing statement 1 of 4
+
+[2024-09-07 10:47:16] INFO: Executing statement 2 of 4
+
+[2024-09-07 10:47:16] INFO: Executing statement 3 of 4
+
+[2024-09-07 10:47:16] INFO: Executing statement 4 of 4
+
+[2024-09-07 10:47:16] INFO: check_timeseries_table.sql completed.
+
+[2024-09-07 10:47:16] INFO: GriddedDataStaging Table Diagnostics:
+
+[2024-09-07 10:47:16] INFO: Running check_griddeddatastaging_table.sql ...
+
+[2024-09-07 10:47:16] INFO: Executing statement 1 of 3
+
+[2024-09-07 10:47:17] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 10:47:17] INFO: Executing statement 1 of 28
+
+[2024-09-07 10:47:17] INFO: Executing statement 2 of 28
+
+[2024-09-07 10:47:17] INFO: Executing statement 3 of 28
+
+[2024-09-07 10:47:18] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 10:47:18] INFO: Executing statement 1 of 11
+
+[2024-09-07 10:47:18] INFO: Executing statement 2 of 11
+
+[2024-09-07 10:47:18] INFO: Executing statement 3 of 11
+
+[2024-09-07 10:47:18] INFO: Executing statement 4 of 11
+
+[2024-09-07 10:47:18] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 10:47:18] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 10:47:18] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 10:47:18] ERROR: Table GriddedData does not exist
+
+[2024-09-07 10:47:18] ERROR: Data consistency checks failed. Please review the logs and data.
+
+[2024-09-07 10:47:18] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 10:49:49] INFO: Starting data processing pipeline
+
+[2024-09-07 10:50:02] INFO: Starting file check and download process
+
+[2024-09-07 10:50:02] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 10:50:02] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:50:03] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 10:50:03] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:50:03] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 10:50:03] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 10:50:03] INFO: Total files downloaded: 0
+
+[2024-09-07 10:50:03] INFO: Total files downloaded: 0
+
+[2024-09-07 10:50:03] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 10:50:03] INFO: Starting data conversion process...
+
+[2024-09-07 10:50:03] INFO: Processing .asc files...
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:03] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 10:50:04] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:50:04] INFO: Processing .nc file...
+
+[2024-09-07 10:50:04] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 10:50:05] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 10:50:05] INFO: Data Conversion Summary:
+
+[2024-09-07 10:50:05] INFO: ASC files processed: 78
+
+[2024-09-07 10:50:05] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 10:50:05] INFO: TimeSeries rows: 88452
+
+[2024-09-07 10:50:05] INFO: NC files processed: 1
+
+[2024-09-07 10:50:05] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 10:50:05] INFO: GriddedData rows: 72
+
+[2024-09-07 10:50:05] INFO: Data conversion process completed.
+
+[2024-09-07 10:50:06] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 10:50:06] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:50:06] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 10:50:06] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 10:50:06] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:50:06] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 10:50:06] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 10:50:06] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:50:11] INFO: Running diagnostic queries
+
+[2024-09-07 10:50:11] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 10:50:11] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 10:50:11] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:50:12] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 10:50:12] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:51:05] INFO: 3_process_gridded_data.sql completed.
+
+[2024-09-07 10:51:05] INFO: Running 4_data_exploration.sql ...
+
+[2024-09-07 10:51:05] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:51:06] INFO: 4_data_exploration.sql completed.
+
+[2024-09-07 10:51:06] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 10:51:06] INFO: Executing statement 1 of 1
+
+[2024-09-07 10:51:07] INFO: 5_verify_data_processing.sql completed.
+
+[2024-09-07 10:51:07] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 10:51:07] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 10:51:07] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 10:51:07] INFO: Data consistency check passed for GriddedData
+
+[2024-09-07 10:51:07] INFO: All data consistency checks passed.
+
+[2024-09-07 10:51:07] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 13:40:10] INFO: Starting data processing pipeline
+
+[2024-09-07 13:40:24] INFO: Starting file check and download process
+
+[2024-09-07 13:40:24] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 13:40:24] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 13:40:24] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 13:40:24] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 13:40:24] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 13:40:24] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 13:40:24] INFO: Total files downloaded: 0
+
+[2024-09-07 13:40:24] INFO: Total files downloaded: 0
+
+[2024-09-07 13:40:24] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 13:40:24] INFO: Starting data conversion process...
+
+[2024-09-07 13:40:24] INFO: Processing .asc files...
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:24] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 13:40:25] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 13:40:26] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 13:40:26] INFO: Processing .nc file...
+
+[2024-09-07 13:40:26] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 13:40:27] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 13:40:27] INFO: Data Conversion Summary:
+
+[2024-09-07 13:40:27] INFO: ASC files processed: 78
+
+[2024-09-07 13:40:27] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 13:40:27] INFO: TimeSeries rows: 88452
+
+[2024-09-07 13:40:27] INFO: NC files processed: 1
+
+[2024-09-07 13:40:27] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 13:40:27] INFO: GriddedData rows: 72
+
+[2024-09-07 13:40:27] INFO: Data conversion process completed.
+
+[2024-09-07 13:40:27] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 13:40:27] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:40:27] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 13:40:27] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 13:40:27] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:40:27] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 13:40:27] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 13:40:27] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:40:32] ERROR: Error in PowerShell script: Exception calling "ExecuteScalar" with "0" argument(s): "Invalid object name 'TimeSeries'."
+
+[2024-09-07 13:40:32] ERROR: Stack trace:
+
+[2024-09-07 13:40:32] ERROR: at <ScriptBlock>, C:\Users\Ken\temperature-analysis-project\ps1\import-gridded-data.ps1: line 65
+
+[2024-09-07 13:40:32] ERROR: Error occurred during data import. No valid JSON returned.
+
+[2024-09-07 13:40:32] ERROR: Data processing pipeline halted due to errors.
+
+[2024-09-07 13:42:53] INFO: Starting data processing pipeline
+
+[2024-09-07 13:43:08] INFO: Starting file check and download process
+
+[2024-09-07 13:43:08] INFO: All required files already exist.
+
+[2024-09-07 13:43:08] INFO: All required files already exist. No download necessary.
+
+[2024-09-07 13:43:08] INFO: Total files downloaded: 0
+
+[2024-09-07 13:43:08] INFO: Total files downloaded: 0
+
+[2024-09-07 13:43:08] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 13:43:08] INFO: Starting data conversion process...
+
+[2024-09-07 13:43:08] INFO: Processing .asc files...
+
+[2024-09-07 13:43:08] INFO: combined_time_series.csv already exists with 88453 rows. Skipping processing.
+
+[2024-09-07 13:43:09] INFO: Processing .nc file...
+
+[2024-09-07 13:43:09] INFO: gridded_data.csv already exists with 73 rows. Skipping processing.
+
+[2024-09-07 13:43:11] INFO: Data Conversion Summary:
+
+[2024-09-07 13:43:11] INFO: ASC files processed: 0
+
+[2024-09-07 13:43:11] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 13:43:11] INFO: TimeSeries rows: 88453
+
+[2024-09-07 13:43:11] INFO: NC files processed: 0
+
+[2024-09-07 13:43:11] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 13:43:11] INFO: GriddedData rows: 73
+
+[2024-09-07 13:43:11] INFO: Data conversion process completed.
+
+[2024-09-07 13:43:11] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 13:43:11] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:11] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 13:43:11] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 13:43:11] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:11] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 13:43:11] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 13:43:11] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:11] INFO: GetTableRowCount.sql completed.
+
+[2024-09-07 13:43:11] INFO: Running TableExists.sql ...
+
+[2024-09-07 13:43:11] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:15] ERROR: Error parsing PowerShell script output: parse error: trailing garbage
+                        1850   -0.693293 -999.000000 -999.000000 -999.
+                     (right here) ------^
+
+
+[2024-09-07 13:43:15] ERROR: Raw output:
+
+[2024-09-07 13:43:15] ERROR: 1850   -0.693293 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.888203 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.916501 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.624017 -999.000000 -999.000000 -999.000000 -999.000000,1850   -1.134991 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.665235 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.761629 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.883027 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.864314 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.494523 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.506562 -999.000000 -999.000000 -999.000000 -999.000000,1850    0.020248 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.767990 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.430196 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.543368 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.619088 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.414241 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.641808 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.458514 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.696771 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.479569 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.493520 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.436643 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.439693 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.237728 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.490002 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.329145 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282719 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282070 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.350490 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.207856 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.396318 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.120882 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.456147 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365015 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.423133 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.426157 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.409290 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365197 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.873316 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.991149 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -2.237527 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.851682 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -3.023366 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.897754 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.810472 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.007897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.712016 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.618279 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.508251 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1    0.131968 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.571936 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.470580 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.034065 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.313675 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.561162 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.577867 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.560473 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.651264 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.485022 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.733578 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.497305 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.430325 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.295107 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.765679 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.315897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.310641 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.266813 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.472872 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.305974 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.458996 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.237623 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.454667 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.394479 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.469069 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.414551 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.579124 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.403700 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000
+{
+    "Error":  "Cannot convert value \"1851   -0.593943 -999.000000 -999.000000 -999.000000 -999.000000\" to type \"System.Int32\". Error: \"Input string was not in a correct format.\"",
+    "StackTrace":  "at \u003cScriptBlock\u003e, C:\\Users\\Ken\\temperature-analysis-project\\ps1\\import-timeseries-data.ps1: line 59"
+}
+
+[2024-09-07 13:43:15] ERROR: Error occurred during TimeSeries data import. No valid JSON returned.
+
+[2024-09-07 13:43:18] INFO: Running diagnostic queries
+
+[2024-09-07 13:43:18] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 13:43:18] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 13:43:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:18] INFO: check_timeseries_table.sql completed.
+
+[2024-09-07 13:43:18] INFO: GriddedDataStaging Table Diagnostics:
+
+[2024-09-07 13:43:18] INFO: Running check_griddeddatastaging_table.sql ...
+
+[2024-09-07 13:43:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:43:18] INFO: check_griddeddatastaging_table.sql completed.
+
+[2024-09-07 13:43:18] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 13:43:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:44:08] INFO: 3_process_gridded_data.sql completed.
+
+[2024-09-07 13:44:08] INFO: Running 4_data_exploration.sql ...
+
+[2024-09-07 13:44:08] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:44:09] INFO: 4_data_exploration.sql completed.
+
+[2024-09-07 13:44:09] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 13:44:09] INFO: Executing statement 1 of 1
+
+[2024-09-07 13:44:10] INFO: 5_verify_data_processing.sql completed.
+
+[2024-09-07 13:44:10] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 13:44:10] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 13:44:10] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 13:44:10] INFO: Data consistency check passed for GriddedData
+
+[2024-09-07 13:44:10] INFO: All data consistency checks passed.
+
+[2024-09-07 13:44:10] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 23:27:01] INFO: Starting data processing pipeline
+
+[2024-09-07 23:27:18] INFO: Starting file check and download process
+
+[2024-09-07 23:27:18] INFO: All required files already exist.
+
+[2024-09-07 23:27:18] INFO: All required files already exist. No download necessary.
+
+[2024-09-07 23:27:18] INFO: Total files downloaded: 0
+
+[2024-09-07 23:27:18] INFO: Total files downloaded: 0
+
+[2024-09-07 23:27:18] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 23:27:18] INFO: Starting data conversion process...
+
+[2024-09-07 23:27:18] INFO: Processing .asc files...
+
+[2024-09-07 23:27:18] INFO: combined_time_series.csv already exists with 88453 rows. Skipping processing.
+
+[2024-09-07 23:27:19] INFO: Processing .nc file...
+
+[2024-09-07 23:27:19] INFO: gridded_data.csv already exists with 73 rows. Skipping processing.
+
+[2024-09-07 23:27:21] INFO: Data Conversion Summary:
+
+[2024-09-07 23:27:21] INFO: ASC files processed: 0
+
+[2024-09-07 23:27:21] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 23:27:21] INFO: TimeSeries rows: 88453
+
+[2024-09-07 23:27:21] INFO: NC files processed: 0
+
+[2024-09-07 23:27:21] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 23:27:21] INFO: GriddedData rows: 73
+
+[2024-09-07 23:27:21] INFO: Data conversion process completed.
+
+[2024-09-07 23:27:21] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 23:27:21] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:27:21] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 23:27:21] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 23:27:21] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:27:21] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 23:27:21] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 23:27:21] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:27:21] INFO: GetTableRowCount.sql completed.
+
+[2024-09-07 23:27:21] INFO: Running TableExists.sql ...
+
+[2024-09-07 23:27:21] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:27:21] INFO: TableExists.sql completed.
+
+[2024-09-07 23:27:21] INFO: SQL utility functions created successfully.
+
+[2024-09-07 23:27:21] INFO: Running create_exploration_results_table.sql ...
+
+[2024-09-07 23:27:21] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:27:21] INFO: create_exploration_results_table.sql completed.
+
+[2024-09-07 23:27:25] ERROR: Error parsing PowerShell script output: parse error: trailing garbage
+                        1850   -0.693293 -999.000000 -999.000000 -999.
+                     (right here) ------^
+
+
+[2024-09-07 23:27:25] ERROR: Raw output:
+
+[2024-09-07 23:27:25] ERROR: 1850   -0.693293 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.888203 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.916501 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.624017 -999.000000 -999.000000 -999.000000 -999.000000,1850   -1.134991 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.665235 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.761629 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.883027 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.864314 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.494523 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.506562 -999.000000 -999.000000 -999.000000 -999.000000,1850    0.020248 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.767990 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.430196 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.543368 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.619088 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.414241 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.641808 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.458514 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.696771 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.479569 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.493520 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.436643 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.439693 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.237728 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.490002 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.329145 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282719 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282070 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.350490 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.207856 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.396318 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.120882 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.456147 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365015 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.423133 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.426157 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.409290 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365197 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.873316 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.991149 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -2.237527 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.851682 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -3.023366 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.897754 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.810472 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.007897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.712016 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.618279 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.508251 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1    0.131968 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.571936 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.470580 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.034065 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.313675 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.561162 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.577867 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.560473 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.651264 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.485022 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.733578 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.497305 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.430325 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.295107 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.765679 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.315897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.310641 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.266813 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.472872 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.305974 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.458996 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.237623 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.454667 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.394479 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.469069 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.414551 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.579124 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.403700 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000
+{
+    "Error":  "Cannot convert value \"-999.000000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA\" to type \"System.Single\". Error: \"Input string was not in a correct format.\"",
+    "StackTrace":  "at \u003cScriptBlock\u003e, C:\\Users\\Ken\\temperature-analysis-project\\ps1\\import-timeseries-data.ps1: line 65"
+}
+
+[2024-09-07 23:27:25] ERROR: Error occurred during TimeSeries data import. No valid JSON returned.
+
+[2024-09-07 23:27:29] INFO: Running diagnostic queries
+
+[2024-09-07 23:27:29] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 23:27:29] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 23:27:29] INFO: Executing statement 1 of 4
+
+[2024-09-07 23:27:29] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 23:27:29] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:28:29] INFO: 3_process_gridded_data.sql completed.
+
+[2024-09-07 23:28:29] INFO: Running 4_data_exploration.sql ...
+
+[2024-09-07 23:28:29] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:28:31] INFO: 4_data_exploration.sql completed.
+
+[2024-09-07 23:28:31] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 23:28:31] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:28:31] INFO: 5_verify_data_processing.sql completed.
+
+[2024-09-07 23:28:31] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 23:28:31] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 23:28:31] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 23:28:31] INFO: Data consistency check passed for GriddedData
+
+[2024-09-07 23:28:31] INFO: All data consistency checks passed.
+
+[2024-09-07 23:28:31] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 23:35:58] INFO: Starting data processing pipeline
+
+[2024-09-07 23:36:12] INFO: Starting file check and download process
+
+[2024-09-07 23:36:12] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 23:36:12] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 23:36:13] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 23:36:13] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 23:36:13] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 23:36:13] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 23:36:13] INFO: Total files downloaded: 0
+
+[2024-09-07 23:36:13] INFO: Total files downloaded: 0
+
+[2024-09-07 23:36:13] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 23:36:13] INFO: Starting data conversion process...
+
+[2024-09-07 23:36:13] INFO: Processing .asc files...
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:13] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:14] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:15] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:36:16] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:36:17] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 23:36:17] INFO: Processing .nc file...
+
+[2024-09-07 23:36:17] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 23:36:18] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 23:36:18] INFO: Data Conversion Summary:
+
+[2024-09-07 23:36:18] INFO: ASC files processed: 78
+
+[2024-09-07 23:36:18] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 23:36:18] INFO: TimeSeries rows: 88452
+
+[2024-09-07 23:36:18] INFO: NC files processed: 1
+
+[2024-09-07 23:36:18] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 23:36:18] INFO: GriddedData rows: 72
+
+[2024-09-07 23:36:18] INFO: Data conversion process completed.
+
+[2024-09-07 23:36:18] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 23:36:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:36:18] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 23:36:18] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 23:36:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:36:18] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 23:36:18] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 23:36:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:36:18] INFO: GetTableRowCount.sql completed.
+
+[2024-09-07 23:36:18] INFO: Running TableExists.sql ...
+
+[2024-09-07 23:36:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:36:18] INFO: TableExists.sql completed.
+
+[2024-09-07 23:36:18] INFO: SQL utility functions created successfully.
+
+[2024-09-07 23:36:18] INFO: Running create_exploration_results_table.sql ...
+
+[2024-09-07 23:36:18] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:36:18] INFO: create_exploration_results_table.sql completed.
+
+[2024-09-07 23:36:20] ERROR: Error parsing PowerShell script output: parse error: trailing garbage
+                        1850   -0.693293 -999.000000 -999.000000 -999.
+                     (right here) ------^
+
+
+[2024-09-07 23:36:20] ERROR: Raw output:
+
+[2024-09-07 23:36:20] ERROR: 1850   -0.693293 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.888203 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.916501 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.624017 -999.000000 -999.000000 -999.000000 -999.000000,1850   -1.134991 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.665235 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.761629 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.883027 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.864314 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.494523 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.506562 -999.000000 -999.000000 -999.000000 -999.000000,1850    0.020248 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.767990 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.430196 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.543368 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.619088 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.414241 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.641808 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.458514 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.696771 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.479569 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.493520 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.436643 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.439693 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.237728 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.490002 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.329145 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282719 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.282070 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.350490 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.207856 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.396318 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.120882 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.456147 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365015 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.423133 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.426157 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.409290 -999.000000 -999.000000 -999.000000 -999.000000,1850   -0.365197 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.873316 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.991149 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -2.237527 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.851682 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -3.023366 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.897754 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.810472 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.007897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.712016 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.618279 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.508251 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1    0.131968 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.571936 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.470580 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.034065 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.313675 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.561162 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.577867 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.560473 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -1.651264 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.485022 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.733578 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.497305 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.430325 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.295107 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.765679 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.315897 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.310641 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.266813 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.472872 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.305974 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.458996 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.237623 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.454667 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.394479 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.469069 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.414551 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.579124 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000,1850  1   -0.403700 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000 -999.000000
+{
+    "Error":  "Cannot convert value \"-999.000000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA\" to type \"System.Single\". Error: \"Input string was not in a correct format.\"",
+    "StackTrace":  "at \u003cScriptBlock\u003e, C:\\Users\\Ken\\temperature-analysis-project\\ps1\\import-timeseries-data.ps1: line 65"
+}
+
+[2024-09-07 23:36:20] ERROR: Error occurred during TimeSeries data import. No valid output returned.
+
+[2024-09-07 23:36:23] INFO: Running diagnostic queries
+
+[2024-09-07 23:36:23] INFO: TimeSeries Table Diagnostics:
+
+[2024-09-07 23:36:23] INFO: Running check_timeseries_table.sql ...
+
+[2024-09-07 23:36:23] INFO: Executing statement 1 of 4
+
+[2024-09-07 23:36:23] INFO: Running 3_process_gridded_data.sql ...
+
+[2024-09-07 23:36:23] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:37:14] INFO: 3_process_gridded_data.sql completed.
+
+[2024-09-07 23:37:14] INFO: Running 4_data_exploration.sql ...
+
+[2024-09-07 23:37:14] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:37:15] INFO: 4_data_exploration.sql completed.
+
+[2024-09-07 23:37:15] INFO: Running 5_verify_data_processing.sql ...
+
+[2024-09-07 23:37:15] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:37:15] INFO: 5_verify_data_processing.sql completed.
+
+[2024-09-07 23:37:15] INFO: Checking data consistency for table: TimeSeries
+
+[2024-09-07 23:37:15] INFO: Data consistency check passed for TimeSeries
+
+[2024-09-07 23:37:15] INFO: Checking data consistency for table: GriddedData
+
+[2024-09-07 23:37:15] INFO: Data consistency check passed for GriddedData
+
+[2024-09-07 23:37:15] INFO: All data consistency checks passed.
+
+[2024-09-07 23:37:15] INFO: Data processing pipeline completed. Data exploration results available in the database
+
+[2024-09-07 23:39:47] INFO: Starting data processing pipeline
+
+[2024-09-07 23:40:02] INFO: Starting file check and download process
+
+[2024-09-07 23:40:02] INFO: Missing files: combined_time_series.csv, gridded_data.csv
+
+[2024-09-07 23:40:02] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: File already exists: aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: 78 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 23:40:02] INFO: Downloading files from https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/
+
+[2024-09-07 23:40:02] INFO: File already exists: NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 23:40:02] INFO: 1 files were already downloaded, 0 have now been downloaded.
+
+[2024-09-07 23:40:02] INFO: All downloads completed. Total new files downloaded: 0
+
+[2024-09-07 23:40:02] INFO: Total files downloaded: 0
+
+[2024-09-07 23:40:02] INFO: Total files downloaded: 0
+
+[2024-09-07 23:40:02] INFO: All required files already exist. No download was necessary.
+
+[2024-09-07 23:40:02] INFO: Starting data conversion process...
+
+[2024-09-07 23:40:02] INFO: Processing .asc files...
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:02] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:03] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc
+
+[2024-09-07 23:40:04] INFO: Reading file: ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc
+
+[2024-09-07 23:40:05] INFO: Processed 78 .asc files. Output saved to ../data/raw//combined_time_series.csv
+
+[2024-09-07 23:40:05] INFO: Processing .nc file...
+
+[2024-09-07 23:40:05] INFO: Processing file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+
+[2024-09-07 23:40:07] INFO: Processed file: ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
+Output saved to ../data/raw//gridded_data.csv
+
+[2024-09-07 23:40:07] INFO: Data Conversion Summary:
+
+[2024-09-07 23:40:07] INFO: ASC files processed: 78
+
+[2024-09-07 23:40:07] INFO: TimeSeries output file: ../data/raw//combined_time_series.csv
+
+[2024-09-07 23:40:07] INFO: TimeSeries rows: 88452
+
+[2024-09-07 23:40:07] INFO: NC files processed: 1
+
+[2024-09-07 23:40:07] INFO: GriddedData output file: ../data/raw//gridded_data.csv
+
+[2024-09-07 23:40:07] INFO: GriddedData rows: 72
+
+[2024-09-07 23:40:07] INFO: Data conversion process completed.
+
+[2024-09-07 23:40:07] INFO: Running 1_setup_database_and_timeseries.sql ...
+
+[2024-09-07 23:40:07] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:40:07] INFO: 1_setup_database_and_timeseries.sql completed.
+
+[2024-09-07 23:40:07] INFO: Running 2_prepare_gridded_data_staging.sql ...
+
+[2024-09-07 23:40:07] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:40:07] INFO: 2_prepare_gridded_data_staging.sql completed.
+
+[2024-09-07 23:40:07] INFO: Running GetTableRowCount.sql ...
+
+[2024-09-07 23:40:07] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:40:07] INFO: GetTableRowCount.sql completed.
+
+[2024-09-07 23:40:07] INFO: Running TableExists.sql ...
+
+[2024-09-07 23:40:07] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:40:07] INFO: TableExists.sql completed.
+
+[2024-09-07 23:40:07] INFO: SQL utility functions created successfully.
+
+[2024-09-07 23:40:07] INFO: Running create_exploration_results_table.sql ...
+
+[2024-09-07 23:40:07] INFO: Executing statement 1 of 1
+
+[2024-09-07 23:40:07] INFO: create_exploration_results_table.sql completed.
+

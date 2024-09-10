@@ -38,6 +38,25 @@ process_nc_file <- function(dir, verbose = FALSE) {
   }
   nc_file <- nc_files[1]
   log_message(sprintf("Processing file: %s", nc_file), "INFO")
+  
+  tryCatch({
+    nc_data <- ncdf4::nc_open(nc_file)
+    var_name <- names(nc_data$var)[1]
+    var_data <- ncdf4::ncvar_get(nc_data, var_name)
+    df <- as.data.frame(var_data)
+    ncdf4::nc_close(nc_data)
+    safe_write_csv(df, output_file, verbose)
+    log_message(sprintf("Processed file: %s\nOutput saved to %s", nc_file, output_file), "INFO")
+    return(list(file_count = 1, output_file = output_file, row_count = nrow(df)))
+  }, error = function(e) {
+    log_message(sprintf("Error processing NC file: %s", conditionMessage(e)), "ERROR")
+    log_message(sprintf("File size: %d bytes", file.size(nc_file)), "INFO")
+    log_message(sprintf("File info: %s", file.info(nc_file)), "INFO")
+    return(NULL)
+  })
+}
+  nc_file <- nc_files[1]
+  log_message(sprintf("Processing file: %s", nc_file), "INFO")
   nc_data <- ncdf4::nc_open(nc_file)
   var_name <- names(nc_data$var)[1]
   var_data <- ncdf4::ncvar_get(nc_data, var_name)

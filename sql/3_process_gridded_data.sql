@@ -1,51 +1,45 @@
 USE [$(SQL_DATABASE_NAME)]
+SET NOCOUNT ON
 
-SET NOCOUNT ON;
+PRINT 'Starting GriddedData processing at ' + CONVERT(VARCHAR, GETDATE(), 120)
 
-PRINT 'Starting GriddedData processing at ' + CONVERT(VARCHAR, GETDATE(), 120);
-
--- Check if GriddedDataStaging exists and has data
 IF OBJECT_ID('dbo.GriddedDataStaging', 'U') IS NULL
 BEGIN
-    RAISERROR('GriddedDataStaging table does not exist.', 16, 1);
-    RETURN;
+    RAISERROR('GriddedDataStaging table does not exist.', 16, 1)
+    RETURN
 END
 
-DECLARE @StagingRowCount INT;
-SELECT @StagingRowCount = COUNT(*) FROM GriddedDataStaging;
+DECLARE @StagingRowCount INT
+SELECT @StagingRowCount = COUNT(*) FROM GriddedDataStaging
 IF @StagingRowCount = 0
 BEGIN
-    RAISERROR('GriddedDataStaging table is empty.', 16, 1);
-    RETURN;
+    RAISERROR('GriddedDataStaging table is empty.', 16, 1)
+    RETURN
 END
 
-PRINT 'GriddedDataStaging exists and contains ' + CAST(@StagingRowCount AS VARCHAR) + ' rows.';
+PRINT 'GriddedDataStaging exists and contains ' + CAST(@StagingRowCount AS VARCHAR) + ' rows.'
 
--- Create the final GriddedData table if it doesn't exist
 IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
 BEGIN
-    DROP TABLE dbo.GriddedData;
-    PRINT 'Existing GriddedData table dropped.';
+    DROP TABLE dbo.GriddedData
+    PRINT 'Existing GriddedData table dropped.'
 END
 
--- Create the table with a clustered columnstore index from the start
 CREATE TABLE GriddedData (
     ID INT IDENTITY(1,1),
     RowID INT NOT NULL,
     ColumnID INT NOT NULL,
     Value FLOAT NOT NULL,
     INDEX CCI_GriddedData CLUSTERED COLUMNSTORE
-);
+)
 
-PRINT 'GriddedData table created with clustered columnstore index.';
+PRINT 'GriddedData table created with clustered columnstore index.'
 
--- Create a nonclustered index for RowID and ColumnID
-CREATE NONCLUSTERED INDEX IX_GriddedData_RowID_ColumnID ON GriddedData (RowID, ColumnID);
+CREATE NONCLUSTERED INDEX IX_GriddedData_RowID_ColumnID ON GriddedData (RowID, ColumnID)
 
-PRINT 'Nonclustered index created on GriddedData.';
+PRINT 'Nonclustered index created on GriddedData.'
 
--- Process the staged data
-PRINT 'Starting data processing from GriddedDataStaging to GriddedData...';
+PRINT 'Starting data processing from GriddedDataStaging to GriddedData...'
 
 INSERT INTO GriddedData (RowID, ColumnID, Value)
 SELECT
@@ -59,35 +53,31 @@ CROSS APPLY (
         TRY_CAST(value AS FLOAT) AS Value
     FROM STRING_SPLIT(s.RawData, ',')
 ) v
-WHERE v.Value IS NOT NULL;
+WHERE v.Value IS NOT NULL
 
--- Verify data was inserted
-DECLARE @GriddedDataRowCount INT;
-SELECT @GriddedDataRowCount = COUNT(*) FROM GriddedData;
-PRINT 'GriddedData now contains ' + CAST(@GriddedDataRowCount AS VARCHAR) + ' rows.';
+DECLARE @GriddedDataRowCount INT
+SELECT @GriddedDataRowCount = COUNT(*) FROM GriddedData
+PRINT 'GriddedData now contains ' + CAST(@GriddedDataRowCount AS VARCHAR) + ' rows.'
 
--- Only drop GriddedDataStaging if data was successfully transferred
 IF @GriddedDataRowCount > 0
 BEGIN
-    DROP TABLE GriddedDataStaging;
-    PRINT 'GriddedDataStaging table dropped.';
+    TRUNCATE TABLE GriddedDataStaging
+    PRINT 'GriddedDataStaging table truncated.'
 END
 ELSE
 BEGIN
-    PRINT 'Warning: GriddedData is empty. GriddedDataStaging was not dropped.';
+    PRINT 'Warning: GriddedData is empty. GriddedDataStaging was not truncated.'
 END
 
--- Check the results
-PRINT 'Sample data from GriddedData:';
-SELECT TOP 5 * FROM GriddedData;
+PRINT 'Sample data from GriddedData:'
+SELECT TOP 5 * FROM GriddedData
 
--- Get some statistics
-PRINT 'GriddedData statistics:';
+PRINT 'GriddedData statistics:'
 SELECT 
     COUNT(*) AS TotalRows,
     MIN(Value) AS MinValue,
     MAX(Value) AS MaxValue,
     AVG(Value) AS AvgValue
-FROM GriddedData;
+FROM GriddedData
 
-PRINT 'GriddedData processing completed at ' + CONVERT(VARCHAR, GETDATE(), 120);
+PRINT 'GriddedData processing completed at ' + CONVERT(VARCHAR, GETDATE(), 120)

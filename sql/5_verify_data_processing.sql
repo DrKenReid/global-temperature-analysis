@@ -1,30 +1,27 @@
 USE [$(SQL_DATABASE_NAME)]
+SET NOCOUNT ON
 
-SET NOCOUNT ON;
+PRINT '--- Data Processing Verification Report ---'
 
-PRINT '--- Data Processing Verification Report ---';
-
--- Check TimeSeries table
-PRINT 'Verifying TimeSeries table:';
-IF EXISTS (SELECT 1 FROM sys.tables WHERE name = 'TimeSeries' AND type = 'U')
+PRINT 'Verifying TimeSeries table:'
+IF OBJECT_ID('dbo.TimeSeries', 'U') IS NOT NULL
 BEGIN
-    SELECT TOP 10 * FROM TimeSeries;
+    SELECT TOP 10 * FROM TimeSeries
     
     SELECT 
         COUNT(*) as TotalRows, 
         MIN(Year) as MinYear, 
         MAX(Year) as MaxYear,
         AVG(Temperature) as AvgTemperature
-    FROM TimeSeries;
+    FROM TimeSeries
 END
 ELSE
-    PRINT 'TimeSeries table does not exist.';
+    PRINT 'TimeSeries table does not exist.'
 
--- Check GriddedData table
-PRINT 'Verifying GriddedData table:';
+PRINT 'Verifying GriddedData table:'
 IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
 BEGIN
-    SELECT TOP 10 * FROM GriddedData;
+    SELECT TOP 10 * FROM GriddedData
     
     SELECT 
         COUNT(*) AS TotalRows,
@@ -33,9 +30,9 @@ BEGIN
         AVG(Value) AS AverageValue,
         MIN(Value) AS MinValue,
         MAX(Value) AS MaxValue
-    FROM GriddedData;
+    FROM GriddedData
 END
 ELSE
-    PRINT 'GriddedData table does not exist.';
+    PRINT 'GriddedData table does not exist.'
 
-PRINT '--- End of Data Processing Verification Report ---';
+PRINT '--- End of Data Processing Verification Report ---'
