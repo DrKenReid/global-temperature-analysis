@@ -8,15 +8,16 @@ BEGIN
     )
 END
 
-IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[GriddedData]') AND type in (N'U'))
-BEGIN
-    CREATE TABLE [dbo].[GriddedData](
-        [ID] INT IDENTITY(1,1) PRIMARY KEY,
-        [Longitude] FLOAT NOT NULL,
-        [Latitude] FLOAT NOT NULL,
-        [Temperature] FLOAT NOT NULL
-    )
-END
+IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
+    DROP TABLE dbo.GriddedData;
+
+CREATE TABLE dbo.GriddedData (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Longitude FLOAT NOT NULL,
+    Latitude FLOAT NOT NULL,
+    Time FLOAT NOT NULL,  -- Changed from INT to FLOAT
+    Temperature FLOAT NOT NULL
+);
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ExplorationResults]') AND type in (N'U'))
 BEGIN
