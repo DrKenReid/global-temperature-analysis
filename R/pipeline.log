@@ -12075,3 +12075,891 @@ Output saved to ../data/raw/gridded_data.csv
 
 [2024-09-10 18:01:32] INFO: Data processing pipeline completed successfully.
 
+[2024-09-11 14:48:49] INFO: Starting data processing pipeline
+
+[2024-09-11 14:50:00] INFO: Starting data processing pipeline
+
+[2024-09-11 14:50:31] INFO: Starting data processing pipeline
+
+[2024-09-11 14:50:31] INFO: Starting data conversion...
+
+[2024-09-11 14:50:31] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 14:50:31] INFO: Database setup completed successfully.
+
+[2024-09-11 14:52:04] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 14:52:06] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 14:52:07] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 14:52:07] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 14:52:07] INFO: Data Exploration Results:
+
+[2024-09-11 14:52:07] INFO: Result set 1:
+
+[2024-09-11 14:52:07] INFO: Result set 2:
+
+[2024-09-11 14:52:07] INFO: Result set 3:
+
+[2024-09-11 14:52:07] INFO: Result set 4:
+
+[2024-09-11 14:52:07] INFO: Result set 5:
+
+[2024-09-11 14:52:07] INFO: Data processing pipeline completed successfully.
+
+[2024-09-11 15:30:04] INFO: Starting data processing pipeline
+
+[2024-09-11 15:30:04] INFO: Starting data conversion...
+
+[2024-09-11 15:30:04] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 15:30:05] INFO: Database setup completed successfully.
+
+[2024-09-11 15:31:34] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 15:31:36] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 15:31:36] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 15:31:37] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 15:31:37] INFO: Data Exploration Results:
+
+[2024-09-11 15:31:37] INFO: Result set 1:
+
+[2024-09-11 15:31:37] INFO: Result set 2:
+
+[2024-09-11 15:31:37] INFO: Result set 3:
+
+[2024-09-11 15:31:37] INFO: Result set 4:
+
+[2024-09-11 15:31:37] INFO: Result set 5:
+
+[2024-09-11 15:31:37] INFO: Data processing pipeline completed successfully.
+
+[2024-09-11 15:43:48] INFO: Starting data processing pipeline
+
+[2024-09-11 15:43:48] INFO: Starting data conversion...
+
+[2024-09-11 15:43:48] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 15:43:49] INFO: Database setup completed successfully.
+
+[2024-09-11 15:45:23] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 15:45:25] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 15:45:25] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 15:45:26] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 15:45:26] INFO: Data Exploration Results:
+
+[2024-09-11 15:45:26] INFO: Result set 1:
+
+[2024-09-11 15:45:26] INFO: Result set 2:
+
+[2024-09-11 15:45:26] INFO: Result set 3:
+
+[2024-09-11 15:45:26] INFO: Result set 4:
+
+[2024-09-11 15:45:26] INFO: Result set 5:
+
+[2024-09-11 15:45:26] INFO: Data processing pipeline completed successfully.
+
+[2024-09-11 15:46:48] INFO: Starting data processing pipeline
+
+[2024-09-11 15:46:49] INFO: Starting data conversion...
+
+[2024-09-11 15:46:49] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 15:46:49] INFO: Database setup completed successfully.
+
+[2024-09-11 15:48:14] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 15:48:17] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 15:48:17] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 15:48:18] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 15:48:18] INFO: Data Exploration Results:
+
+[2024-09-11 15:48:18] INFO: Result set 1:
+
+[2024-09-11 15:48:18] INFO: Result set 2:
+
+[2024-09-11 15:48:18] INFO: Result set 3:
+
+[2024-09-11 15:48:18] INFO: Result set 4:
+
+[2024-09-11 15:48:18] INFO: Result set 5:
+
+[2024-09-11 15:48:18] INFO: Data processing pipeline completed successfully.
+
+[2024-09-11 15:49:13] INFO: Starting data processing pipeline
+
+[2024-09-11 15:49:13] INFO: Starting data conversion...
+
+[2024-09-11 15:49:13] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 15:49:13] INFO: Database setup completed successfully.
+
+[2024-09-11 15:49:57] INFO: Starting data processing pipeline
+
+[2024-09-11 15:50:18] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 15:50:18] INFO: Starting data conversion...
+
+[2024-09-11 15:50:18] INFO: Timeseries data converted successfully.
+
+[2024-09-11 15:51:36] INFO: Starting data processing pipeline
+[2024-09-11 15:51:56] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 15:51:56] INFO: Starting data conversion...
+[2024-09-11 15:51:56] INFO: Timeseries data converted successfully.
+[2024-09-11 15:52:25] INFO: Gridded data converted successfully.
+[2024-09-11 15:52:25] INFO: Data conversion completed.
+[2024-09-11 15:52:25] INFO: Database setup completed successfully.
+[2024-09-11 15:53:06] INFO: Starting data processing pipeline
+[2024-09-11 15:53:27] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 15:53:27] INFO: Starting data conversion...
+[2024-09-11 15:53:27] INFO: Timeseries data converted successfully.
+[2024-09-11 15:53:58] INFO: Gridded data converted successfully.
+[2024-09-11 15:53:58] INFO: Data conversion completed.
+[2024-09-11 15:53:58] INFO: Database setup completed successfully.
+[2024-09-11 15:54:49] INFO: Starting data processing pipeline
+[2024-09-11 15:54:49] INFO: Starting data conversion...
+[2024-09-11 15:54:49] INFO: CSV files already exist. Skipping conversion.
+[2024-09-11 15:54:49] INFO: Database setup completed successfully.
+[2024-09-11 15:55:15] INFO: Starting data processing pipeline
+[2024-09-11 15:55:34] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 15:55:34] INFO: Starting data conversion...
+[2024-09-11 15:55:34] INFO: Timeseries data converted successfully.
+[2024-09-11 15:56:06] INFO: Gridded data converted successfully.
+[2024-09-11 15:56:06] INFO: Data conversion completed.
+[2024-09-11 15:56:06] INFO: Database setup completed successfully.
+[2024-09-11 15:57:03] INFO: Starting data processing pipeline
+[2024-09-11 15:57:03] INFO: Starting data conversion...
+[2024-09-11 15:57:03] INFO: CSV files already exist. Skipping conversion.
+[2024-09-11 15:57:03] INFO: Database setup completed successfully.
+[2024-09-11 15:58:23] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+[2024-09-11 15:58:26] INFO: Executed SQL file: ../sql/process_data.sql
+[2024-09-11 15:58:26] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+[2024-09-11 15:58:26] INFO: Executed SQL file: ../sql/explore_data.sql
+[2024-09-11 15:58:26] INFO: Data Exploration Results:
+[2024-09-11 15:58:26] INFO: Result set 1:
+[2024-09-11 15:58:26] INFO: Result set 2:
+[2024-09-11 15:58:26] INFO: Result set 3:
+[2024-09-11 15:58:26] INFO: Result set 4:
+[2024-09-11 15:58:26] INFO: Result set 5:
+[2024-09-11 15:58:26] INFO: Data processing pipeline completed successfully.
+[2024-09-11 16:00:14] INFO: Starting data processing pipeline
+[2024-09-11 16:00:35] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 16:00:35] INFO: Starting data conversion...
+[2024-09-11 16:00:35] INFO: Timeseries data converted successfully.
+[2024-09-11 16:00:35] ERROR: Error converting NC file: Error: variable has 4 dims, but start has 3 entries.  They must match!
+[2024-09-11 16:00:35] INFO: Data conversion completed.
+[2024-09-11 16:00:35] INFO: Database setup completed successfully.
+[2024-09-11 16:05:30] INFO: Starting data processing pipeline
+[2024-09-11 16:05:48] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 16:05:48] INFO: Starting data conversion...
+[2024-09-11 16:05:49] INFO: Timeseries data converted successfully.
+[2024-09-11 16:05:49] ERROR: Error converting NC file: Error: variable has 4 dims, but start has 3 entries.  They must match!
+[2024-09-11 16:05:49] INFO: Data conversion completed.
+[2024-09-11 16:05:49] INFO: Database setup completed successfully.
+[2024-09-11 16:06:40] INFO: Starting data processing pipeline
+[2024-09-11 16:06:40] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 16:06:41] INFO: Starting data conversion...
+[2024-09-11 16:06:41] ERROR: Error converting NC file: Error: variable has 4 dims, but start has 3 entries.  They must match!
+[2024-09-11 16:06:41] INFO: Data conversion completed.
+[2024-09-11 16:06:41] INFO: Database setup completed successfully.
+[2024-09-11 16:07:53] INFO: Starting data processing pipeline
+[2024-09-11 16:07:54] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+[2024-09-11 16:07:54] INFO: Starting data conversion...
+[2024-09-11 16:07:54] ERROR: Error converting NC file: Error: variable has 4 dims, but start has 3 entries.  They must match!
+[2024-09-11 16:07:54] INFO: Data conversion completed.
+[2024-09-11 16:07:54] INFO: Database setup completed successfully.
+[2024-09-11 16:11:31] INFO: Starting data processing pipeline
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: File ../data/raw/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc already exists. Skipping download.
+
+[2024-09-11 16:11:31] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 16:11:31] INFO: Starting data conversion...
+
+[2024-09-11 16:11:31] INFO: ASC file not found or CSV already exists. Skipping timeseries conversion.
+
+[2024-09-11 16:11:59] INFO: Starting data processing pipeline
+
+[2024-09-11 16:11:59] INFO: Starting data conversion...
+
+[2024-09-11 16:11:59] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:11:59] INFO: Database setup completed successfully.
+
+[2024-09-11 16:13:23] INFO: Starting data processing pipeline
+
+[2024-09-11 16:13:24] INFO: Starting data conversion...
+
+[2024-09-11 16:13:24] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:13:24] INFO: Database setup completed successfully.
+
+[2024-09-11 16:14:27] INFO: Starting data processing pipeline
+
+[2024-09-11 16:14:27] INFO: Starting data conversion...
+
+[2024-09-11 16:14:27] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:14:27] INFO: Database setup completed successfully.
+
+[2024-09-11 16:15:21] INFO: Starting data processing pipeline
+
+[2024-09-11 16:15:21] INFO: Starting Downloading data
+
+[2024-09-11 16:15:21] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:15:21] INFO: Starting Converting data
+
+[2024-09-11 16:15:22] INFO: Starting data conversion...
+
+[2024-09-11 16:15:22] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:15:22] INFO: Converting data completed successfully.
+
+[2024-09-11 16:15:22] INFO: Starting Setting up database
+
+[2024-09-11 16:15:22] INFO: Database setup completed successfully.
+
+[2024-09-11 16:15:22] INFO: Setting up database completed successfully.
+
+[2024-09-11 16:15:22] INFO: Starting Importing TimeSeries data
+
+[2024-09-11 16:15:22] ERROR: File not found: ../data/raw/combined_time_series.csv
+
+[2024-09-11 16:15:22] INFO: Importing TimeSeries data completed successfully.
+
+[2024-09-11 16:15:22] INFO: Starting Importing GriddedData
+
+[2024-09-11 16:15:22] ERROR: File not found: ../data/raw/gridded_data.csv
+
+[2024-09-11 16:15:22] INFO: Importing GriddedData completed successfully.
+
+[2024-09-11 16:15:22] INFO: Imported rows - TimeSeries: 0, GriddedData: 0
+
+[2024-09-11 16:15:22] ERROR: Pipeline failed: No data imported into any table. Stopping pipeline.
+
+[2024-09-11 16:16:11] INFO: Starting data processing pipeline
+
+[2024-09-11 16:16:11] INFO: Starting Downloading data
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:11] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.ann.ocean.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.land_ocean.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.00N.30N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.00N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.20N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.20S.20N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.30N.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.30S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.60N.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.60S.30S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.60S.60N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.90S.00N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.90S.20S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.90S.60S.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/timeseries/aravg.mon.ocean.90S.90N.v6.0.0.202407.asc: Callback aborted
+
+[2024-09-11 16:16:12] ERROR: Error downloading https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v6/access/gridded/NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc: Callback aborted
+
+[2024-09-11 16:16:12] INFO: Downloaded 0/78 ASC files and 0/1 NC file
+
+[2024-09-11 16:16:12] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:16:12] ERROR: Pipeline failed: Data download failed. Stopping pipeline.
+
+[2024-09-11 16:16:36] INFO: Starting data processing pipeline
+
+[2024-09-11 16:16:36] INFO: Starting Downloading data
+
+[2024-09-11 16:16:58] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 16:16:58] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:16:58] INFO: Starting Converting data
+
+[2024-09-11 16:16:58] INFO: Starting data conversion...
+
+[2024-09-11 16:16:58] INFO: Timeseries data converted successfully.
+
+[2024-09-11 16:17:26] INFO: Gridded data converted successfully.
+
+[2024-09-11 16:17:26] INFO: Data conversion completed.
+
+[2024-09-11 16:17:26] INFO: Converting data completed successfully.
+
+[2024-09-11 16:17:26] INFO: Starting Setting up database
+
+[2024-09-11 16:17:26] INFO: Database setup completed successfully.
+
+[2024-09-11 16:17:26] INFO: Setting up database completed successfully.
+
+[2024-09-11 16:17:26] INFO: Starting Importing TimeSeries data
+
+[2024-09-11 16:17:26] ERROR: File not found: ../data/raw/combined_time_series.csv
+
+[2024-09-11 16:17:26] INFO: Importing TimeSeries data completed successfully.
+
+[2024-09-11 16:17:26] INFO: Starting Importing GriddedData
+
+[2024-09-11 16:17:26] ERROR: File not found: ../data/raw/gridded_data.csv
+
+[2024-09-11 16:17:26] INFO: Importing GriddedData completed successfully.
+
+[2024-09-11 16:17:26] INFO: Imported rows - TimeSeries: 0, GriddedData: 0
+
+[2024-09-11 16:17:26] ERROR: Pipeline failed: No data imported into any table. Stopping pipeline.
+
+[2024-09-11 16:19:52] INFO: Starting data processing pipeline
+
+[2024-09-11 16:19:52] INFO: Starting Downloading data
+
+[2024-09-11 16:19:52] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:19:52] INFO: Starting Converting data
+
+[2024-09-11 16:19:53] INFO: Starting data conversion...
+
+[2024-09-11 16:19:53] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:19:53] INFO: Converting data completed successfully.
+
+[2024-09-11 16:19:53] INFO: Starting Setting up database
+
+[2024-09-11 16:19:53] INFO: Database setup completed successfully.
+
+[2024-09-11 16:19:53] INFO: Setting up database completed successfully.
+
+[2024-09-11 16:19:53] INFO: Starting Importing TimeSeries data
+
+[2024-09-11 16:19:53] INFO: Attempting to import data from: ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:19:53] INFO: Successfully read 175 rows from ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:19:53] INFO: Executing query: DELETE FROM TimeSeries
+
+[2024-09-11 16:19:53] INFO: Importing 175 rows into TimeSeries table
+
+[2024-09-11 16:19:53] INFO: Successfully imported 175 rows into TimeSeries table
+
+[2024-09-11 16:19:53] INFO: Importing TimeSeries data completed successfully.
+
+[2024-09-11 16:19:53] INFO: Starting Importing GriddedData
+
+[2024-09-11 16:19:53] INFO: Attempting to import data from: ../data/processed/gridded_data.csv
+
+[2024-09-11 16:20:07] INFO: Successfully read 5430240 rows from ../data/processed/gridded_data.csv
+
+[2024-09-11 16:20:07] INFO: Executing query: DELETE FROM GriddedData
+
+[2024-09-11 16:20:07] INFO: Importing 5430240 rows into GriddedData table
+
+[2024-09-11 16:21:28] INFO: Successfully imported 5430240 rows into GriddedData table
+
+[2024-09-11 16:21:28] INFO: Importing GriddedData completed successfully.
+
+[2024-09-11 16:21:28] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 16:21:28] INFO: Starting Processing data
+
+[2024-09-11 16:21:30] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 16:21:30] INFO: Processing data completed successfully.
+
+[2024-09-11 16:21:30] INFO: Starting Running diagnostics
+
+[2024-09-11 16:21:31] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 16:21:31] INFO: Running diagnostics completed successfully.
+
+[2024-09-11 16:21:31] INFO: Starting Data exploration
+
+[2024-09-11 16:21:31] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 16:21:31] INFO: Data exploration completed successfully.
+
+[2024-09-11 16:21:31] INFO: Data Exploration Results:
+
+[2024-09-11 16:21:31] INFO: Result set 1:
+
+[2024-09-11 16:21:31] INFO: Result set 2:
+
+[2024-09-11 16:21:31] INFO: Result set 3:
+
+[2024-09-11 16:21:31] INFO: Result set 4:
+
+[2024-09-11 16:21:31] INFO: Result set 5:
+
+[2024-09-11 16:21:31] INFO: Data processing pipeline completed successfully.
+
+[2024-09-11 16:22:20] INFO: Starting data processing pipeline
+
+[2024-09-11 16:22:20] INFO: Starting Downloading data
+
+[2024-09-11 16:22:44] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 16:22:44] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:22:44] INFO: Starting Converting data
+
+[2024-09-11 16:22:44] INFO: Starting data conversion...
+
+[2024-09-11 16:22:44] INFO: Timeseries data converted successfully.
+
+[2024-09-11 16:30:09] INFO: Starting data processing pipeline
+
+[2024-09-11 16:30:09] INFO: Starting Downloading data
+
+[2024-09-11 16:30:33] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 16:30:33] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:30:33] INFO: Starting Converting data
+
+[2024-09-11 16:30:33] INFO: Starting data conversion...
+
+[2024-09-11 16:30:33] INFO: Timeseries data converted successfully.
+
+[2024-09-11 16:30:44] INFO: Starting data processing pipeline
+
+[2024-09-11 16:30:44] INFO: Starting Downloading data
+
+[2024-09-11 16:30:44] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:30:44] INFO: Starting Converting data
+
+[2024-09-11 16:30:44] INFO: Starting data conversion...
+
+[2024-09-11 16:30:44] INFO: CSV files already exist. Skipping conversion.
+
+[2024-09-11 16:30:44] INFO: Converting data completed successfully.
+
+[2024-09-11 16:30:44] INFO: Starting Setting up database
+
+[2024-09-11 16:30:44] INFO: Database setup completed successfully.
+
+[2024-09-11 16:30:44] INFO: Setting up database completed successfully.
+
+[2024-09-11 16:30:44] INFO: Starting Importing TimeSeries data
+
+[2024-09-11 16:30:44] INFO: Attempting to import data from: ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:30:44] INFO: Successfully read 175 rows from ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:30:44] INFO: Executing query: DELETE FROM TimeSeries
+
+[2024-09-11 16:30:44] INFO: Importing 175 rows into TimeSeries table
+
+[2024-09-11 16:30:44] INFO: Successfully imported 175 rows into TimeSeries table
+
+[2024-09-11 16:30:44] INFO: Importing TimeSeries data completed successfully.
+
+[2024-09-11 16:30:44] INFO: Starting Importing GriddedData
+
+[2024-09-11 16:30:44] INFO: Attempting to import data from: ../data/processed/gridded_data.csv
+
+[2024-09-11 16:30:46] INFO: Successfully read 1252999 rows from ../data/processed/gridded_data.csv
+
+[2024-09-11 16:30:46] INFO: Executing query: DELETE FROM GriddedData
+
+[2024-09-11 16:30:46] INFO: Importing 1252999 rows into GriddedData table
+
+[2024-09-11 16:31:59] INFO: Starting data processing pipeline
+
+[2024-09-11 16:31:59] INFO: Starting Downloading data
+
+[2024-09-11 16:32:19] INFO: Downloaded 78/78 ASC files and 1/1 NC file
+
+[2024-09-11 16:32:19] INFO: Downloading data completed successfully.
+
+[2024-09-11 16:32:19] INFO: Starting Converting data
+
+[2024-09-11 16:32:19] INFO: Starting data conversion...
+
+[2024-09-11 16:32:19] INFO: Converting timeseries data...
+
+[2024-09-11 16:32:19] INFO: Timeseries data converted successfully.
+
+[2024-09-11 16:32:19] INFO: Converting gridded data...
+
+[2024-09-11 16:32:47] INFO: Gridded data converted successfully.
+
+[2024-09-11 16:32:47] INFO: Data conversion completed.
+
+[2024-09-11 16:32:47] INFO: Converting data completed successfully.
+
+[2024-09-11 16:32:47] INFO: Starting Setting up database
+
+[2024-09-11 16:32:47] INFO: Database setup completed successfully.
+
+[2024-09-11 16:32:47] INFO: Setting up database completed successfully.
+
+[2024-09-11 16:32:47] INFO: Starting Importing TimeSeries data
+
+[2024-09-11 16:32:47] INFO: Attempting to import data from: ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:32:47] INFO: Successfully read 175 rows from ../data/processed/combined_time_series.csv
+
+[2024-09-11 16:32:47] INFO: Executing query: DELETE FROM TimeSeries
+
+[2024-09-11 16:32:47] INFO: Importing 175 rows into TimeSeries table
+
+[2024-09-11 16:32:47] INFO: Successfully imported 175 rows into TimeSeries table
+
+[2024-09-11 16:32:47] INFO: Importing TimeSeries data completed successfully.
+
+[2024-09-11 16:32:47] INFO: Starting Importing GriddedData
+
+[2024-09-11 16:32:47] INFO: Attempting to import data from: ../data/processed/gridded_data.csv
+
+[2024-09-11 16:32:57] INFO: Successfully read 5430240 rows from ../data/processed/gridded_data.csv
+
+[2024-09-11 16:32:57] INFO: Executing query: DELETE FROM GriddedData
+
+[2024-09-11 16:32:57] INFO: Importing 5430240 rows into GriddedData table
+
+[2024-09-11 16:34:22] INFO: Successfully imported 5430240 rows into GriddedData table
+
+[2024-09-11 16:34:22] INFO: Importing GriddedData completed successfully.
+
+[2024-09-11 16:34:22] INFO: Imported rows - TimeSeries: 175, GriddedData: 5430240
+
+[2024-09-11 16:34:22] INFO: Starting Processing data
+
+[2024-09-11 16:34:25] INFO: Executed SQL file: ../sql/process_data.sql
+
+[2024-09-11 16:34:25] INFO: Processing data completed successfully.
+
+[2024-09-11 16:34:25] INFO: Starting Running diagnostics
+
+[2024-09-11 16:34:25] INFO: Executed SQL file: ../sql/run_diagnostics.sql
+
+[2024-09-11 16:34:25] INFO: Running diagnostics completed successfully.
+
+[2024-09-11 16:34:25] INFO: Starting Data exploration
+
+[2024-09-11 16:34:25] INFO: Executed SQL file: ../sql/explore_data.sql
+
+[2024-09-11 16:34:25] INFO: Data exploration completed successfully.
+
+[2024-09-11 16:34:25] INFO: Data Exploration Results:
+
+[2024-09-11 16:34:25] INFO: Result set 1:
+
+[2024-09-11 16:34:25] INFO: Result set 2:
+
+[2024-09-11 16:34:25] INFO: Result set 3:
+
+[2024-09-11 16:34:25] INFO: Result set 4:
+
+[2024-09-11 16:34:25] INFO: Result set 5:
+
+[2024-09-11 16:34:25] INFO: Data processing pipeline completed successfully.
+

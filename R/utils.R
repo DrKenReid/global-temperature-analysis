@@ -9,6 +9,9 @@ library(readr)
 library(curl)
 
 convert_data <- function() {
+  library(progress)
+  library(ncdf4)
+  
   log_message("Starting data conversion...")
   raw_dir <- file.path("..", "data", "raw")
   processed_dir <- file.path("..", "data", "processed")
@@ -27,11 +30,22 @@ convert_data <- function() {
   asc_file <- file.path(raw_dir, "aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc")
   if (file.exists(asc_file) && !file.exists(timeseries_csv)) {
     tryCatch({
+      log_message("Converting timeseries data...")
+      pb <- progress_bar$new(
+        format = "[:bar] :percent eta: :eta",
+        total = 100,
+        clear = FALSE,
+        width = 60
+      )
+      
       ts_data <- read.table(asc_file, header = FALSE, fill = TRUE, stringsAsFactors = FALSE)
+      pb$tick(50)
+      
       if (ncol(ts_data) >= 2) {
         ts_data <- ts_data[, 1:2]
         colnames(ts_data) <- c("Year", "Temperature")
         write.csv(ts_data, timeseries_csv, row.names = FALSE)
+        pb$tick(50)
         log_message("Timeseries data converted successfully.")
       } else {
         log_message("ASC file does not have expected number of columns.", "ERROR")
@@ -47,12 +61,28 @@ convert_data <- function() {
   nc_file <- file.path(raw_dir, "NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc")
   if (file.exists(nc_file) && file.size(nc_file) > 0 && !file.exists(gridded_csv)) {
     tryCatch({
+      log_message("Converting gridded data...")
+      pb <- progress_bar$new(
+        format = "[:bar] :percent eta: :eta",
+        total = 100,
+        clear = FALSE,
+        width = 60
+      )
+      
       nc <- nc_open(nc_file)
+      pb$tick(20)
+      
       var_name <- names(nc$var)[1]
       df <- expand.grid(Longitude = ncvar_get(nc, "lon"), Latitude = ncvar_get(nc, "lat"), Time = ncvar_get(nc, "time"))
+      pb$tick(40)
+      
       df$Temperature <- as.vector(ncvar_get(nc, var_name))
+      pb$tick(20)
+      
       nc_close(nc)
       write.csv(df, gridded_csv, row.names = FALSE)
+      pb$tick(20)
+      
       log_message("Gridded data converted successfully.")
     }, error = function(e) {
       log_message(sprintf("Error converting NC file: %s", conditionMessage(e)), "ERROR")
@@ -149,16 +179,18 @@ download_data <- function() {
     return(TRUE)
   }
   
-  download_file <- function(url, destfile) {
+  download_file <- function(url, destfile, pb) {
     if (file.exists(destfile)) {
       log_message(sprintf("File %s already exists. Skipping download.", destfile))
       return(TRUE)
     }
     tryCatch({
       curl_download(url, destfile, mode = "wb")
+      pb$tick()
       TRUE
     }, error = function(e) {
       log_message(sprintf("Error downloading %s: %s", url, conditionMessage(e)), "ERROR")
+      pb$tick()
       FALSE
     })
   }
@@ -170,13 +202,30 @@ download_data <- function() {
     xml2::xml_find_all("//a[contains(@href, '.asc')]") %>%
     xml2::xml_attr("href")
   
+  # Create progress bar for ASC files
+  pb_asc <- progress_bar$new(
+    format = "Downloading ASC files [:bar] :percent eta: :eta",
+    total = length(asc_files),
+    clear = FALSE,
+    width = 60
+  )
+  
   asc_success <- sapply(asc_files, function(file) {
-    download_file(paste0(timeseries_url, file), file.path(download_dir, file))
+    download_file(paste0(timeseries_url, file), file.path(download_dir, file), pb_asc)
   })
   
   # Download NC file
   nc_file <- "NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc"
-  nc_success <- download_file(paste0(gridded_url, nc_file), file.path(download_dir, nc_file))
+  
+  # Create progress bar for NC file
+  pb_nc <- progress_bar$new(
+    format = "Downloading NC file [:bar] :percent eta: :eta",
+    total = 1,
+    clear = FALSE,
+    width = 60
+  )
+  
+  nc_success <- download_file(paste0(gridded_url, nc_file), file.path(download_dir, nc_file), pb_nc)
   
   log_message(sprintf("Downloaded %d/%d ASC files and %s NC file", sum(asc_success), length(asc_success), if(nc_success) "1/1" else "0/1"))
   
@@ -210,16 +259,26 @@ execute_sql_file <- function(con, filename) {
 }
 
 import_data <- function(csv_path, con, table_name) {
+  csv_path <- file.path("..", "data", "processed", basename(csv_path))
+  log_message(sprintf("Attempting to import data from: %s", csv_path))
+  
   if (file.exists(csv_path)) {
     data <- read.csv(csv_path)
+    log_message(sprintf("Successfully read %d rows from %s", nrow(data), csv_path))
     
     # Delete existing data
-    dbExecute(con, sprintf("DELETE FROM %s", table_name))
+    delete_query <- sprintf("DELETE FROM %s", table_name)
+    log_message(sprintf("Executing query: %s", delete_query))
+    dbExecute(con, delete_query)
     
     # Import new data
+    log_message(sprintf("Importing %d rows into %s table", nrow(data), table_name))
     dbWriteTable(con, table_name, data, append = TRUE, row.names = FALSE)
     
-    return(nrow(data))
+    imported_rows <- dbGetQuery(con, sprintf("SELECT COUNT(*) as count FROM %s", table_name))$count
+    log_message(sprintf("Successfully imported %d rows into %s table", imported_rows, table_name))
+    
+    return(imported_rows)
   } else {
     log_message(sprintf("File not found: %s", csv_path), "ERROR")
     return(0)
@@ -227,7 +286,7 @@ import_data <- function(csv_path, con, table_name) {
 }
 
 load_required_packages <- function() {
-  required_packages <- c("curl", "DBI", "dplyr", "httr", "ncdf4", "odbc", "readr")
+  required_packages <- c("curl", "DBI", "dplyr", "httr", "ncdf4", "odbc", "readr", "xml2", "progress", "lubridate", "tidyverse")
   sapply(required_packages, function(package) {
     if(!require(package, character.only = TRUE)) {
       install.packages(package, dependencies = TRUE)

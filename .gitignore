@@ -3,19 +3,20 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
 
 # Output files
 outputs/*
 !outputs/.gitkeep
-.log
+*.log
 
 # Raw data files (if they're large)
 data/raw/*
 !data/raw/.gitkeep
-.asc
-.nc
-.csv
-.txt
+*.asc
+*.nc
+*.csv
+*.txt
 
 # Processed data files (if they're large)
 data/processed/*
@@ -24,3 +25,35 @@ data/processed/*
 # System specific files
 .DS_Store
 Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# SQL Server specific
+*.mdf
+*.ldf
+
+# Tableau workbooks
+*.twb
+*.twbx
+
+# Excel files
+*.xls
+*.xlsx
+
+# PDF files
+*.pdf
+
+# Zip files
+*.zip
+
+# Avoid committing sensitive information
+*.env
+config.ini
+secrets.yaml

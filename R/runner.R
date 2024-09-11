@@ -30,10 +30,10 @@ main <- function() {
     }
     
     ts_rows <- run_pipeline_step("Importing TimeSeries data", import_data, 
-                                 file.path("..", "data", "raw", "combined_time_series.csv"), con, "TimeSeries")
+                                 "combined_time_series.csv", con, "TimeSeries")
     
     gd_rows <- run_pipeline_step("Importing GriddedData", import_data, 
-                                 file.path("..", "data", "raw", "gridded_data.csv"), con, "GriddedData")
+                                 "gridded_data.csv", con, "GriddedData")
     
     log_message(sprintf("Imported rows - TimeSeries: %d, GriddedData: %d", ts_rows, gd_rows))
     
