@@ -1,6 +1,6 @@
 # 🌡️ Global Temperature Analysis Project 🌍
 
-A comprehensive data analysis pipeline for NOAA global temperature data, using R, SQL Server, and PowerShell.
+A comprehensive data analysis pipeline for NOAA global temperature data, using R and SQL Server.
 
 ## 📋 Data Source
 
@@ -18,7 +18,7 @@ Uses NOAAGlobalTemp dataset, including:
 
 1. Data Download and Conversion (R)
 2. SQL Database Operations
-3. Data Processing Pipeline (R, SQL, PowerShell)
+3. Data Processing Pipeline (R, SQL)
 4. Data Cleaning and Analysis (SQL)
 5. CSV Export
 6. Enhanced Error Handling and Logging
@@ -30,29 +30,21 @@ temperature-analysis-project/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── combined_time_series.csv
-│   │   └── gridded_data.csv
+│   │   ├── aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
+│   │   └── NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
 │   └── processed/
+│       ├── combined_time_series.csv
+│       └── gridded_data.csv
 │
 ├── R/
-│   ├── data_converter.R
-│   ├── data_downloader.R
 │   ├── runner.R
 │   └── utils.R
 │
-├── sql/
-├   ├── 1_setup_database_and_timeseries.sql
-    ├── 2_prepare_gridded_data_staging.sql
-    ├── 3_process_gridded_data.sql
-    ├── 4_data_exploration.sql
-    ├── 5_verify_data_processing.sql
-    ├── 6_verify_data_exploration.sql
-    ├── check_griddeddatastaging_table.sql
-    ├── check_timeseries_table.sql
-    ├── create_exploration_results_table.sql
-    ├── GetTableRowCount.sql
-    └── TableExists.sql
-
+└── sql/
+    ├── setup_database.sql
+    ├── process_data.sql
+    ├── run_diagnostics.sql
+    └── explore_data.sql
 ```
 
 ## 👥 Who is this for?
@@ -77,13 +69,12 @@ temperature-analysis-project/
 
 - R (3.6.0+)
 - SQL Server (2019+)
-- PowerShell (5.1+)
 
-R packages: here, DBI, odbc, rvest, httr, jsonlite, lubridate, dplyr, readr
+R packages: DBI, dplyr, httr, ncdf4, odbc, readr, curl
 
 ## 🚀 How to Use
 
-1. Ensure you have R, SQL Server, and PowerShell installed on your system
+1. Ensure you have R and SQL Server installed on your system
 2. Clone the repository
 3. Open R or RStudio and set the working directory to the `R/` folder
 4. Run `runner.R`
@@ -100,7 +91,6 @@ The script will automatically handle database setup, data download, and processi
 - Automated database and table creation
 - Data consistency checks for TimeSeries and GriddedData tables
 - Detailed diagnostic queries for data verification
-- PowerShell script integration for efficient data import
 
 ## 🔜 Upcoming Features
 
