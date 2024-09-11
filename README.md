@@ -22,6 +22,7 @@ Uses NOAAGlobalTemp dataset, including:
 4. Data Cleaning and Analysis (SQL)
 5. CSV Export
 6. Enhanced Error Handling and Logging
+7. Progress Tracking for Data Processing
 
 ## 📁 Project Structure
 
@@ -36,15 +37,30 @@ temperature-analysis-project/
 │       ├── combined_time_series.csv
 │       └── gridded_data.csv
 │
+├── docs/
+│   ├── database_schema.md
+│   ├── data_dictionary.md
+│   └── data_processing_pipeline.md
+│
+├── outputs/
+│   ├── plots/
+│   ├── tableau/
+│   └── tables/
+│
 ├── R/
 │   ├── runner.R
 │   └── utils.R
 │
-└── sql/
-    ├── setup_database.sql
-    ├── process_data.sql
-    ├── run_diagnostics.sql
-    └── explore_data.sql
+├── sql/
+│   ├── drop_tables.sql
+│   ├── explore_data.sql
+│   ├── process_data.sql
+│   ├── run_diagnostics.sql
+│   └── setup_database.sql
+│
+├── .gitignore
+├── pipeline.log
+└── README.md
 ```
 
 ## 👥 Who is this for?
@@ -64,13 +80,13 @@ temperature-analysis-project/
 - Improved data consistency checks
 - Modular SQL script execution
 - Automated database setup and table creation
+- Progress tracking for data conversion and processing
 
 ## 🛠️ Requirements
 
 - R (3.6.0+)
 - SQL Server (2019+)
-
-R packages: DBI, dplyr, httr, ncdf4, odbc, readr, curl
+- R packages: DBI, dplyr, httr, ncdf4, odbc, readr, curl, progress
 
 ## 🚀 How to Use
 
@@ -91,6 +107,7 @@ The script will automatically handle database setup, data download, and processi
 - Automated database and table creation
 - Data consistency checks for TimeSeries and GriddedData tables
 - Detailed diagnostic queries for data verification
+- Progress bars for data conversion and processing tasks
 
 ## 🔜 Upcoming Features
 
