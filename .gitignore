@@ -57,3 +57,12 @@ Thumbs.db
 *.env
 config.ini
 secrets.yaml
+
+# Additional R-specific files
+/R/Rproj.user
+/R/.Rhistory
+/R/R.Rproj
+/R/pipeline.log
+
+# Ignore all log files in any directory
+**/*.log
