@@ -5,112 +5,91 @@
 ### TimeSeries
 
 ```sql
-CREATE TABLE TimeSeries (
-    Year INT NOT NULL,
-    Temperature FLOAT NOT NULL,
-    V3 FLOAT,
-    V4 FLOAT,
-    V5 FLOAT,
-    V6 FLOAT,
-    V7 VARCHAR(50),
-    V8 VARCHAR(50),
-    V9 VARCHAR(50),
-    V10 VARCHAR(50),
-    CONSTRAINT PK_TimeSeries PRIMARY KEY CLUSTERED (Year)
+CREATE TABLE [dbo].[TimeSeries](
+    [Year] INT NOT NULL PRIMARY KEY,
+    [Temperature] FLOAT NOT NULL
 )
 ```
 
 ### GriddedData
 
 ```sql
-CREATE TABLE GriddedData (
-    ID INT IDENTITY(1,1),
-    RowID INT NOT NULL,
-    ColumnID INT NOT NULL,
-    Value FLOAT NOT NULL,
-    INDEX CCI_GriddedData CLUSTERED COLUMNSTORE
+CREATE TABLE [dbo].[GriddedData] (
+    [ID] INT IDENTITY(1,1) PRIMARY KEY,
+    [Longitude] FLOAT NOT NULL,
+    [Latitude] FLOAT NOT NULL,
+    [Time] FLOAT NOT NULL,
+    [Temperature] FLOAT NOT NULL
+)
+```
+
+### ProcessedTimeSeries
+
+```sql
+CREATE TABLE [dbo].[ProcessedTimeSeries] (
+    [Year] INT PRIMARY KEY,
+    [AverageTemperature] FLOAT,
+    [TenYearMovingAverage] FLOAT
+)
+```
+
+### ProcessedGriddedData
+
+```sql
+CREATE TABLE [dbo].[ProcessedGriddedData] (
+    [ID] INT IDENTITY(1,1) PRIMARY KEY,
+    [Year] INT,
+    [Latitude] FLOAT,
+    [Longitude] FLOAT,
+    [AverageTemperature] FLOAT
 )
 ```
 
 ### ExplorationResults
 
 ```sql
-CREATE TABLE ExplorationResults (
-    ResultID INT IDENTITY(1,1) PRIMARY KEY,
-    ExplorationName NVARCHAR(100),
-    ResultData NVARCHAR(MAX),
-    CreatedAt DATETIME DEFAULT GETDATE()
+CREATE TABLE [dbo].[ExplorationResults](
+    [ID] INT IDENTITY(1,1) PRIMARY KEY,
+    [AnalysisName] NVARCHAR(100) NOT NULL,
+    [Result] NVARCHAR(MAX) NOT NULL
 )
 ```
 
 ## Indexes
 
 - `PK_TimeSeries`: Clustered primary key on the `Year` column of the TimeSeries table.
-- `CCI_GriddedData`: Clustered columnstore index on the GriddedData table for improved query performance.
-- `IX_GriddedData_RowID_ColumnID`: Nonclustered index on RowID and ColumnID columns of the GriddedData table.
-
-```sql
-CREATE NONCLUSTERED INDEX IX_GriddedData_RowID_ColumnID ON GriddedData (RowID, ColumnID)
-```
+- `PK_GriddedData`: Clustered primary key on the `ID` column of the GriddedData table.
+- `PK_ProcessedTimeSeries`: Clustered primary key on the `Year` column of the ProcessedTimeSeries table.
+- `PK_ProcessedGriddedData`: Clustered primary key on the `ID` column of the ProcessedGriddedData table.
+- `PK_ExplorationResults`: Clustered primary key on the `ID` column of the ExplorationResults table.
 
 ## Relationships
 
-There is no explicit foreign key relationship between tables. However, there are implicit relationships:
+There are no explicit foreign key relationships between tables. However, there are implicit relationships:
 
-- The `Year` in TimeSeries corresponds to `RowID` in GriddedData.
-- The `ColumnID` in GriddedData represents spatial locations (5° x 5° grid points).
-
-## Utility Functions
-
-1. GetTableRowCount
-```sql
-CREATE PROCEDURE dbo.GetTableRowCount
-    @TableName NVARCHAR(128),
-    @RowCount INT OUTPUT
-AS
-BEGIN
-    DECLARE @SQL NVARCHAR(MAX);
-    SET @SQL = N'SELECT @RowCount = COUNT(*) FROM ' + QUOTENAME(@TableName);
-    EXEC sp_executesql @SQL, N'@RowCount INT OUTPUT', @RowCount OUTPUT;
-END;
-```
-
-2. TableExists
-```sql
-CREATE FUNCTION dbo.TableExists
-(
-    @TableName NVARCHAR(128)
-)
-RETURNS BIT
-AS
-BEGIN
-    DECLARE @Result BIT = 0;
-    IF OBJECT_ID(@TableName, 'U') IS NOT NULL
-        SET @Result = 1;
-    RETURN @Result;
-END;
-```
+- The `Year` in TimeSeries and ProcessedTimeSeries corresponds to the derived `Year` in ProcessedGriddedData.
+- The `Time` in GriddedData represents days since January 1, 1850, which can be converted to years for comparison with other tables.
 
 ## Notes
 
-1. The TimeSeries table uses a traditional rowstore structure with a clustered primary key on the Year column. This is optimal for quick lookups by year and sequential scans.
+1. The TimeSeries and ProcessedTimeSeries tables use the Year as the primary key for quick lookups and to ensure data integrity (one record per year).
 
-2. The GriddedData table uses a clustered columnstore index, which is excellent for analytical queries and data compression, especially beneficial for large datasets.
+2. The GriddedData table stores raw data with high temporal resolution (using the Time column), while ProcessedGriddedData aggregates this data annually.
 
 3. The ExplorationResults table stores the results of various data exploration queries, allowing for easy retrieval and comparison of analysis results.
 
-4. The additional nonclustered index on GriddedData (RowID, ColumnID) allows for quick lookups and joins on these columns when needed.
+4. Consider adding appropriate indexes on frequently queried columns or combinations of columns to improve query performance, especially for the GriddedData and ProcessedGriddedData tables.
 
-5. Consider adding appropriate indexes on frequently queried columns or combinations of columns to improve query performance.
-
-6. Regularly update statistics on all tables to ensure optimal query performance:
+5. Regularly update statistics on all tables to ensure optimal query performance:
 
    ```sql
    UPDATE STATISTICS TimeSeries WITH FULLSCAN
    UPDATE STATISTICS GriddedData WITH FULLSCAN
+   UPDATE STATISTICS ProcessedTimeSeries WITH FULLSCAN
+   UPDATE STATISTICS ProcessedGriddedData WITH FULLSCAN
    UPDATE STATISTICS ExplorationResults WITH FULLSCAN
    ```
 
-7. Monitor query performance and adjust indexing strategy as needed based on the most common query patterns.
+6. Monitor query performance and adjust indexing strategy as needed based on the most common query patterns.
 
-8. The utility functions (GetTableRowCount and TableExists) provide helpful tools for managing and querying the database schema.
+7. The schema allows for efficient storage of both raw and processed data, facilitating both detailed and aggregated analyses of global temperature trends.

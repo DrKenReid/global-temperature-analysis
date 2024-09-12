@@ -29,3 +29,4 @@ EXEC sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
 
 -- Print completion message
 PRINT 'All related tables have been dropped successfully.';
+
