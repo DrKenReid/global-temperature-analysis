@@ -78,23 +78,15 @@ temperature-analysis-project/
 - Automated database setup and table creation
 - Progress tracking for data conversion and processing
 
-## 🛠️ Requirements
+## ## 🛠️ Requirements
 
-R (3.6.0+)
-SQL Server (2019+)
-R packages:
-
-curl
-DBI
-dplyr
-httr
-ncdf4
-odbc
-readr
-xml2
-progress
-lubridate
-tidyverse
+- R (3.6.0+)
+- SQL Server (2019+)
+- R packages:
+  ```
+  curl, DBI, dplyr, httr, ncdf4, odbc, readr, xml2, 
+  progress, lubridate, tidyverse
+  ```
 
 The script will automatically install and load these packages if they are not already available in your R environment.
 
@@ -104,9 +96,10 @@ The script will automatically install and load these packages if they are not al
 2. Clone the repository
 3. Open R or RStudio and set the working directory to the `R/` folder
 4. Run `runner.R`
-5. Check `data/processed/` for results and the SQL database for exploration data
+5. The script will automatically install any missing packages
+6. Check `data/processed/` for results and the SQL database for exploration data
 
-The script will automatically handle database setup, data download, and processing.
+The script will handle package installation, database setup, data download, and processing automatically.
 
 ## 🔍 Key Features
 
