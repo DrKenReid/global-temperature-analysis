@@ -26,16 +26,14 @@ Uses NOAAGlobalTemp dataset, including:
 
 ## 📁 Project Structure
 
+Before running your project should look like this. After running, you'll find the empty folders filled with downloaded raw temperature data, processed `csv`s and more to come.. 
+
 ```
 temperature-analysis-project/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
-│   │   └── NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
 │   └── processed/
-│       ├── combined_time_series.csv
-│       └── gridded_data.csv
 │
 ├── docs/
 │   ├── database_schema.md
@@ -59,10 +57,8 @@ temperature-analysis-project/
 │   └── setup_database.sql
 │
 ├── .gitignore
-├── pipeline.log
 └── README.md
 ```
-
 ## 👥 Who is this for?
 
 - Climate researchers
