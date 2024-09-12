@@ -80,9 +80,23 @@ temperature-analysis-project/
 
 ## 🛠️ Requirements
 
-- R (3.6.0+)
-- SQL Server (2019+)
-- R packages: DBI, dplyr, httr, ncdf4, odbc, readr, curl, progress
+R (3.6.0+)
+SQL Server (2019+)
+R packages:
+
+curl
+DBI
+dplyr
+httr
+ncdf4
+odbc
+readr
+xml2
+progress
+lubridate
+tidyverse
+
+The script will automatically install and load these packages if they are not already available in your R environment.
 
 ## 🚀 How to Use
 
