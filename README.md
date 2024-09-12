@@ -1,4 +1,4 @@
-# 🌡️ Global Temperature Analysis Project 🌍
+# 🌡️ Global *WORK IN PROGRESS* Temperature Analysis Project 🌍
 
 A comprehensive data analysis pipeline for NOAA global temperature data, using R and SQL Server.
 
