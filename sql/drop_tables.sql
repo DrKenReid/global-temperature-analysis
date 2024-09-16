@@ -1,32 +1,63 @@
--- Drop all related tables in the Global Temperature Analysis database
+USE [$(SQL_DATABASE_NAME)];
 
--- Disable foreign key checks to allow dropping tables in any order
-EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all"
+-- =============================================
+-- Author:      Your Name
+-- Create date: YYYY-MM-DD
+-- Description: Script to drop all related tables in the GlobalTemperatureAnalysis database
+-- =============================================
 
--- Drop the main data tables
-IF OBJECT_ID('dbo.TimeSeries', 'U') IS NOT NULL
-    DROP TABLE dbo.TimeSeries;
+SET NOCOUNT ON;
 
-IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
-    DROP TABLE dbo.GriddedData;
+BEGIN TRY
+    -- Begin a transaction to ensure atomicity
+    BEGIN TRANSACTION;
 
-IF OBJECT_ID('dbo.ProcessedTimeSeries', 'U') IS NOT NULL
-    DROP TABLE dbo.ProcessedTimeSeries;
+    -- Disable foreign key constraints
+    EXEC sp_msforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL';
+    PRINT 'Disabled all foreign key constraints.';
 
-IF OBJECT_ID('dbo.ProcessedGriddedData', 'U') IS NOT NULL
-    DROP TABLE dbo.ProcessedGriddedData;
+    -- List of tables to drop
+    DECLARE @tablesToDrop TABLE (TableName NVARCHAR(128));
+    INSERT INTO @tablesToDrop (TableName)
+    VALUES 
+        ('dbo.ProcessedGriddedData'),
+        ('dbo.ProcessedTimeSeries'),
+        ('dbo.GriddedDataStaging'),
+        ('dbo.GriddedData'),
+        ('dbo.TimeSeries'),
+        ('dbo.ExplorationResults');
 
--- Drop the results table
-IF OBJECT_ID('dbo.ExplorationResults', 'U') IS NOT NULL
-    DROP TABLE dbo.ExplorationResults;
+    -- Drop tables if they exist
+    DECLARE @sql NVARCHAR(MAX);
+    SELECT @sql = STRING_AGG('
+    IF OBJECT_ID(''' + TableName + ''', ''U'') IS NOT NULL
+    BEGIN
+        DROP TABLE ' + TableName + ';
+        PRINT ''Dropped table ' + TableName + '.''; 
+    END
+    ELSE
+    BEGIN
+        PRINT ''Table ' + TableName + ' does not exist.'';
+    END', CHAR(13))
+    FROM @tablesToDrop;
 
--- Drop any staging tables that might exist
-IF OBJECT_ID('dbo.GriddedDataStaging', 'U') IS NOT NULL
-    DROP TABLE dbo.GriddedDataStaging;
+    EXEC sp_executesql @sql;
 
--- Re-enable foreign key checks
-EXEC sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
+    -- Re-enable foreign key constraints
+    EXEC sp_msforeachtable 'ALTER TABLE ? WITH CHECK CHECK CONSTRAINT ALL';
+    PRINT 'Re-enabled all foreign key constraints.';
 
--- Print completion message
-PRINT 'All related tables have been dropped successfully.';
+    -- Commit the transaction
+    COMMIT TRANSACTION;
+    PRINT 'All related tables have been dropped successfully.';
+END TRY
+BEGIN CATCH
+    -- Rollback the transaction in case of an error
+    ROLLBACK TRANSACTION;
 
+    DECLARE @ErrorMessage NVARCHAR(4000) = ERROR_MESSAGE();
+    DECLARE @ErrorSeverity INT = ERROR_SEVERITY();
+    DECLARE @ErrorState INT = ERROR_STATE();
+
+    RAISERROR (@ErrorMessage, @ErrorSeverity, @ErrorState);
+END CATCH;
