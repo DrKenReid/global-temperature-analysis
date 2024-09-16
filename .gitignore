@@ -1,32 +1,32 @@
-﻿# R specific
-.Rproj.user
+﻿# R-specific files
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 *.Rproj
 
-# Output files
-outputs/*
-!outputs/.gitkeep
+# Logs
 *.log
+**/*.log
+pipeline.log
 
-# Raw data files (if they're large)
-data/raw/*
+# Output files
+outputs/
+!outputs/.gitkeep
+
+# Raw data files
+data/raw/
 !data/raw/.gitkeep
-*.asc
-*.nc
-*.csv
-*.txt
 
-# Processed data files (if they're large)
-data/processed/*
+# Processed data files
+data/processed/
 !data/processed/.gitkeep
 
-# System specific files
+# System-specific files
 .DS_Store
 Thumbs.db
 
-# IDE specific files
+# IDE-specific files
 .vscode/
 .idea/
 
@@ -35,34 +35,37 @@ Thumbs.db
 *.swp
 *.swo
 
-# SQL Server specific
+# SQL Server-specific files
 *.mdf
 *.ldf
+
+# Large or binary files
+*.asc
+*.nc
+*.csv
+*.txt
+*.xls
+*.xlsx
+*.pdf
+*.zip
 
 # Tableau workbooks
 *.twb
 *.twbx
 
-# Excel files
-*.xls
-*.xlsx
-
-# PDF files
-*.pdf
-
-# Zip files
-*.zip
-
-# Avoid committing sensitive information
+# Sensitive information
 *.env
 config.ini
 secrets.yaml
 
-# Additional R-specific files
-/R/Rproj.user
-/R/.Rhistory
-/R/R.Rproj
-/R/pipeline.log
+# Exclude data directory files (if they're large)
+data/**/*.asc
+data/**/*.nc
+data/**/*.csv
+data/**/*.txt
 
-# Ignore all log files in any directory
-**/*.log
+# Exclude R project files in the R/ directory
+R/.Rproj.user/
+R/.Rhistory
+R/*.Rproj
+R/pipeline.log

@@ -26,16 +26,14 @@ Uses NOAAGlobalTemp dataset, including:
 
 ## 📁 Project Structure
 
+Before running your project should look like this. After running, you'll find the empty folders filled with downloaded raw temperature data, processed `csv`s and more to come.. 
+
 ```
 temperature-analysis-project/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── aravg.ann.land_ocean.90S.90N.v6.0.0.202407.asc
-│   │   └── NOAAGlobalTemp_v6.0.0_gridded_s185001_e202407_c20240806T153047.nc
 │   └── processed/
-│       ├── combined_time_series.csv
-│       └── gridded_data.csv
 │
 ├── docs/
 │   ├── database_schema.md
@@ -59,10 +57,8 @@ temperature-analysis-project/
 │   └── setup_database.sql
 │
 ├── .gitignore
-├── pipeline.log
 └── README.md
 ```
-
 ## 👥 Who is this for?
 
 - Climate researchers
@@ -82,11 +78,17 @@ temperature-analysis-project/
 - Automated database setup and table creation
 - Progress tracking for data conversion and processing
 
-## 🛠️ Requirements
+## ## 🛠️ Requirements
 
 - R (3.6.0+)
 - SQL Server (2019+)
-- R packages: DBI, dplyr, httr, ncdf4, odbc, readr, curl, progress
+- R packages:
+  ```
+  curl, DBI, dplyr, httr, ncdf4, odbc, readr, xml2, 
+  progress, lubridate, tidyverse
+  ```
+
+The script will automatically install and load these packages if they are not already available in your R environment.
 
 ## 🚀 How to Use
 
@@ -94,9 +96,10 @@ temperature-analysis-project/
 2. Clone the repository
 3. Open R or RStudio and set the working directory to the `R/` folder
 4. Run `runner.R`
-5. Check `data/processed/` for results and the SQL database for exploration data
+5. The script will automatically install any missing packages
+6. Check `data/processed/` for results and the SQL database for exploration data
 
-The script will automatically handle database setup, data download, and processing.
+The script will handle package installation, database setup, data download, and processing automatically.
 
 ## 🔍 Key Features
 
