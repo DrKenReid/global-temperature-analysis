@@ -35,12 +35,15 @@ execute_sql_file <- function(con, filename) {
     sql_content <- paste(readLines(filename), collapse = "\n")
     # Replace placeholder with actual database name
     sql_content <- gsub("\\$\\(SQL_DATABASE_NAME\\)", Sys.getenv("SQL_DATABASE_NAME"), sql_content)
-    sql_statements <- unlist(strsplit(sql_content, ";"))
     
-    for (statement in sql_statements) {
-      statement <- trimws(statement)
-      if (nchar(statement) > 0) {
-        dbExecute(con, statement)
+    # Split the script on 'GO' statements, case-insensitive
+    # Use regex with inline modifier (?i) for case-insensitive matching
+    sql_batches <- unlist(strsplit(sql_content, "(?i)\\bGO\\b", perl = TRUE))
+    
+    for (batch in sql_batches) {
+      batch <- trimws(batch)
+      if (nchar(batch) > 0) {
+        dbExecute(con, batch)
       }
     }
     
@@ -51,7 +54,6 @@ execute_sql_file <- function(con, filename) {
     FALSE
   })
 }
-
 
 
 #' Import Data from CSV to Database
@@ -65,20 +67,36 @@ import_data <- function(csv_filename, con, table_name) {
   
   if (!file.exists(csv_path)) {
     log_message(sprintf("File not found: %s", csv_path), "ERROR")
-    return(0)
+    return(FALSE)
   }
   
   tryCatch({
     data <- read.csv(csv_path)
-    dbExecute(con, sprintf("DELETE FROM %s", table_name))
+    
+    # Remove duplicate years
+    data <- data[!duplicated(data$Year), ]
+    
+    # Start a database transaction
+    dbBegin(con)
+    
+    # Delete existing data
+    delete_result <- dbExecute(con, sprintf("DELETE FROM %s", table_name))
+    log_message(sprintf("Deleted %d rows from %s.", delete_result, table_name))
+    
+    # Import new data
     dbWriteTable(con, table_name, data, overwrite = FALSE, append = TRUE, row.names = FALSE)
     
-    imported_rows <- dbGetQuery(con, sprintf("SELECT COUNT(*) as count FROM %s", table_name))$count
+    # Commit the transaction
+    dbCommit(con)
+    
+    imported_rows <- nrow(data)
     log_message(sprintf("Successfully imported %d rows into %s table", imported_rows, table_name))
-    imported_rows
+    TRUE
   }, error = function(e) {
+    # Rollback in case of error
+    dbRollback(con)
     log_message(sprintf("Error importing data into %s: %s", table_name, conditionMessage(e)), "ERROR")
-    0
+    FALSE
   })
 }
 

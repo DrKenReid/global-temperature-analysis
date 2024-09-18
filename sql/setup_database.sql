@@ -8,19 +8,25 @@ USE [$(SQL_DATABASE_NAME)];
 
 SET NOCOUNT ON;
 
+ALTER TABLE dbo.TimeSeries NOCHECK CONSTRAINT ALL;
+DELETE FROM dbo.TimeSeries;
+ALTER TABLE dbo.TimeSeries CHECK CONSTRAINT ALL;
+
 BEGIN TRY
-    -- Begin transaction to ensure atomicity
     BEGIN TRANSACTION;
 
-    -- Create TimeSeries table if it doesn't exist
-    IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'TimeSeries' AND type = 'U')
+    -- Drop and recreate TimeSeries table
+    IF OBJECT_ID('dbo.TimeSeries', 'U') IS NOT NULL
     BEGIN
-        CREATE TABLE dbo.TimeSeries (
-            Year INT NOT NULL PRIMARY KEY,
-            Temperature FLOAT NOT NULL
-        );
-        PRINT 'Created table dbo.TimeSeries.';
+        DROP TABLE dbo.TimeSeries;
+        PRINT 'Dropped existing table dbo.TimeSeries.';
     END
+
+    CREATE TABLE dbo.TimeSeries (
+        Year INT NOT NULL PRIMARY KEY,
+        Temperature FLOAT NOT NULL
+    );
+    PRINT 'Created table dbo.TimeSeries.';
 
     -- Drop and recreate GriddedData table
     IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
