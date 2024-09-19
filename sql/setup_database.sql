@@ -8,16 +8,16 @@ USE [$(SQL_DATABASE_NAME)];
 
 SET NOCOUNT ON;
 
-ALTER TABLE dbo.TimeSeries NOCHECK CONSTRAINT ALL;
-DELETE FROM dbo.TimeSeries;
-ALTER TABLE dbo.TimeSeries CHECK CONSTRAINT ALL;
-
 BEGIN TRY
     BEGIN TRANSACTION;
 
     -- Drop and recreate TimeSeries table
     IF OBJECT_ID('dbo.TimeSeries', 'U') IS NOT NULL
     BEGIN
+        ALTER TABLE dbo.TimeSeries NOCHECK CONSTRAINT ALL;
+        DELETE FROM dbo.TimeSeries;
+        ALTER TABLE dbo.TimeSeries CHECK CONSTRAINT ALL;
+
         DROP TABLE dbo.TimeSeries;
         PRINT 'Dropped existing table dbo.TimeSeries.';
     END
@@ -31,17 +31,22 @@ BEGIN TRY
     -- Drop and recreate GriddedData table
     IF OBJECT_ID('dbo.GriddedData', 'U') IS NOT NULL
     BEGIN
+        ALTER TABLE dbo.GriddedData NOCHECK CONSTRAINT ALL;
+        DELETE FROM dbo.GriddedData;
+        ALTER TABLE dbo.GriddedData CHECK CONSTRAINT ALL;
+
         DROP TABLE dbo.GriddedData;
         PRINT 'Dropped existing table dbo.GriddedData.';
     END
 
     CREATE TABLE dbo.GriddedData (
-        ID INT IDENTITY(1,1) PRIMARY KEY,
-        Longitude FLOAT NOT NULL,
-        Latitude FLOAT NOT NULL,
-        Time FLOAT NOT NULL,
-        Temperature FLOAT NOT NULL
-    );
+		ID INT IDENTITY(1,1) PRIMARY KEY,
+		Longitude FLOAT NOT NULL,
+		Latitude FLOAT NOT NULL,
+		Time FLOAT NOT NULL,
+		Temperature FLOAT NOT NULL
+	);
+
     PRINT 'Created table dbo.GriddedData.';
 
     -- Create ExplorationResults table if it doesn't exist

@@ -1,8 +1,8 @@
-USE [$(SQL_DATABASE_NAME)];
+USE GlobalTemperatureAnalysis
 
 -- =============================================
--- Author:      Your Name
--- Create date: YYYY-MM-DD
+-- Author:      Ken Reid
+-- Create date: 2024-09-18
 -- Description: Script to drop all related tables in the GlobalTemperatureAnalysis database
 -- =============================================
 

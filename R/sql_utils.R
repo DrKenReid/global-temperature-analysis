@@ -1,15 +1,36 @@
 # sql_utils.R
 
-#' Connect to the SQL Database
+#' Connect to the SQL Database and Create Database if It Doesn't Exist
 #'
-#' @param verbose Logical, if TRUE, logs connection success message
 #' @return A database connection object or NULL if connection fails
 db_connect <- function() {
   tryCatch({
+    # First connect to 'master' database
     con <- dbConnect(odbc::odbc(),
                      Driver = "ODBC Driver 17 for SQL Server",
                      Server = Sys.getenv("SQL_SERVER_NAME"),
-                     Database = Sys.getenv("SQL_DATABASE_NAME"),
+                     Database = "master",
+                     Trusted_Connection = "Yes")
+    
+    # Check if database exists
+    db_name <- Sys.getenv("SQL_DATABASE_NAME")
+    db_exists <- dbGetQuery(con, paste0("SELECT database_id FROM sys.databases WHERE Name = '", db_name, "'"))
+    
+    if (nrow(db_exists) == 0) {
+      # Database does not exist, create it
+      dbExecute(con, paste0("CREATE DATABASE [", db_name, "]"))
+      log_message(sprintf("Created database %s.", db_name))
+    } else {
+      log_message(sprintf("Database %s already exists.", db_name))
+    }
+    
+    # Disconnect from 'master' and reconnect to the target database
+    dbDisconnect(con)
+    
+    con <- dbConnect(odbc::odbc(),
+                     Driver = "ODBC Driver 17 for SQL Server",
+                     Server = Sys.getenv("SQL_SERVER_NAME"),
+                     Database = db_name,
                      Trusted_Connection = "Yes")
     log_message("Connected to database successfully.")
     con
@@ -19,12 +40,11 @@ db_connect <- function() {
   })
 }
 
-
 #' Execute SQL File
 #'
 #' @param con A database connection object
 #' @param filename The name of the SQL file to execute
-#' @return A list of query results, or NULL if execution failed
+#' @return TRUE if execution was successful, FALSE otherwise
 execute_sql_file <- function(con, filename) {
   if (!file.exists(filename)) {
     log_message(sprintf("SQL file not found: %s", filename), "ERROR")
@@ -36,25 +56,16 @@ execute_sql_file <- function(con, filename) {
     # Replace placeholder with actual database name
     sql_content <- gsub("\\$\\(SQL_DATABASE_NAME\\)", Sys.getenv("SQL_DATABASE_NAME"), sql_content)
     
-    # Split the script on 'GO' statements, case-insensitive
-    # Use regex with inline modifier (?i) for case-insensitive matching
-    sql_batches <- unlist(strsplit(sql_content, "(?i)\\bGO\\b", perl = TRUE))
-    
-    for (batch in sql_batches) {
-      batch <- trimws(batch)
-      if (nchar(batch) > 0) {
-        dbExecute(con, batch)
-      }
-    }
+    # Execute the entire script with immediate = TRUE
+    dbExecute(con, sql_content, immediate = TRUE)
     
     log_message(sprintf("Executed SQL file: %s", filename))
-    TRUE
+    TRUE  # Indicate success
   }, error = function(e) {
     log_message(sprintf("Error executing SQL script %s: %s", filename, conditionMessage(e)), "ERROR")
     FALSE
   })
 }
-
 
 #' Import Data from CSV to Database
 #'
@@ -67,14 +78,16 @@ import_data <- function(csv_filename, con, table_name) {
   
   if (!file.exists(csv_path)) {
     log_message(sprintf("File not found: %s", csv_path), "ERROR")
-    return(FALSE)
+    return(0)
   }
   
   tryCatch({
     data <- read.csv(csv_path)
     
-    # Remove duplicate years
-    data <- data[!duplicated(data$Year), ]
+    # Remove duplicate entries if applicable
+    if ("Year" %in% colnames(data)) {
+      data <- data[!duplicated(data$Year), ]
+    }
     
     # Start a database transaction
     dbBegin(con)
@@ -83,7 +96,19 @@ import_data <- function(csv_filename, con, table_name) {
     delete_result <- dbExecute(con, sprintf("DELETE FROM %s", table_name))
     log_message(sprintf("Deleted %d rows from %s.", delete_result, table_name))
     
-    # Import new data
+    # Log the first few rows of data
+    log_message(sprintf("First few rows of data to be imported into %s:", table_name))
+    print(head(data))
+    
+    # Ensure correct data types for GriddedData
+    if (table_name == "GriddedData") {
+      data$Longitude <- as.numeric(data$Longitude)
+      data$Latitude <- as.numeric(data$Latitude)
+      data$Time <- as.numeric(data$Time)
+      data$Temperature <- as.numeric(data$Temperature)
+    }
+    
+    # Import new data with error capturing
     dbWriteTable(con, table_name, data, overwrite = FALSE, append = TRUE, row.names = FALSE)
     
     # Commit the transaction
@@ -91,35 +116,11 @@ import_data <- function(csv_filename, con, table_name) {
     
     imported_rows <- nrow(data)
     log_message(sprintf("Successfully imported %d rows into %s table", imported_rows, table_name))
-    TRUE
+    imported_rows
   }, error = function(e) {
     # Rollback in case of error
     dbRollback(con)
     log_message(sprintf("Error importing data into %s: %s", table_name, conditionMessage(e)), "ERROR")
-    FALSE
-  })
-}
-
-#' Setup Database
-#'
-#' @param con Database connection object
-#' @return Logical TRUE if setup was successful, FALSE otherwise
-setup_database <- function(con) {
-  sql_file <- file.path("..", "sql", "setup_database.sql")
-  if (!file.exists(sql_file)) {
-    log_message(sprintf("SQL file not found: %s", sql_file), "ERROR")
-    return(FALSE)
-  }
-  
-  sql_script <- paste(readLines(sql_file), collapse = "\n")
-  sql_script <- gsub("\\$\\(SQL_DATABASE_NAME\\)", Sys.getenv("SQL_DATABASE_NAME"), sql_script)
-  
-  tryCatch({
-    dbExecute(con, sql_script)
-    log_message("Database setup completed successfully.")
-    TRUE
-  }, error = function(e) {
-    log_message(sprintf("Error executing SQL script %s: %s", sql_file, conditionMessage(e)), "ERROR")
-    FALSE
+    0
   })
 }

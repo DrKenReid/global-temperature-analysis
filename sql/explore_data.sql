@@ -16,27 +16,48 @@ BEGIN
     RETURN;
 END
 
+-- Clear existing ExplorationResults
+DELETE FROM dbo.ExplorationResults;
+
 -- Global temperature trends
-SELECT TOP 10 
-    Year, 
-    AverageTemperature, 
-    TenYearMovingAverage
-FROM dbo.ProcessedTimeSeries
-ORDER BY Year ASC;
+INSERT INTO dbo.ExplorationResults (AnalysisName, Result)
+SELECT 
+    'Global Temperature Trends' AS AnalysisName,
+    CONCAT('Year: ', Year, ', AverageTemperature: ', AverageTemperature, ', TenYearMovingAverage: ', TenYearMovingAverage) AS Result
+FROM (
+    SELECT TOP 10 
+        Year, 
+        AverageTemperature, 
+        TenYearMovingAverage
+    FROM dbo.ProcessedTimeSeries
+    ORDER BY Year ASC
+) t;
 
 -- Hottest years on record
-SELECT TOP 10 
-    Year, 
-    AverageTemperature
-FROM dbo.ProcessedTimeSeries
-ORDER BY AverageTemperature DESC;
+INSERT INTO dbo.ExplorationResults (AnalysisName, Result)
+SELECT 
+    'Hottest Years on Record' AS AnalysisName,
+    CONCAT('Year: ', Year, ', AverageTemperature: ', AverageTemperature) AS Result
+FROM (
+    SELECT TOP 10 
+        Year, 
+        AverageTemperature
+    FROM dbo.ProcessedTimeSeries
+    ORDER BY AverageTemperature DESC
+) t;
 
 -- Coldest years on record
-SELECT TOP 10 
-    Year, 
-    AverageTemperature
-FROM dbo.ProcessedTimeSeries
-ORDER BY AverageTemperature ASC;
+INSERT INTO dbo.ExplorationResults (AnalysisName, Result)
+SELECT 
+    'Coldest Years on Record' AS AnalysisName,
+    CONCAT('Year: ', Year, ', AverageTemperature: ', AverageTemperature) AS Result
+FROM (
+    SELECT TOP 10 
+        Year, 
+        AverageTemperature
+    FROM dbo.ProcessedTimeSeries
+    ORDER BY AverageTemperature ASC
+) t;
 
 -- Temperature change by latitude band
 ;WITH LatitudeBands AS (
@@ -69,15 +90,17 @@ StartEndTemperatures AS (
         LAST_VALUE(AvgTemperature) OVER (PARTITION BY LatitudeBand ORDER BY Year ASC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS EndTemperature
     FROM BandAverages
 )
+INSERT INTO dbo.ExplorationResults (AnalysisName, Result)
 SELECT
-    LatitudeBand,
-    StartYear,
-    EndYear,
-    StartTemperature,
-    EndTemperature,
-    EndTemperature - StartTemperature AS TemperatureChange
+    'Temperature Change by Latitude Band' AS AnalysisName,
+    CONCAT('LatitudeBand: ', LatitudeBand, 
+           ', StartYear: ', StartYear, 
+           ', EndYear: ', EndYear, 
+           ', StartTemperature: ', StartTemperature, 
+           ', EndTemperature: ', EndTemperature, 
+           ', TemperatureChange: ', EndTemperature - StartTemperature) AS Result
 FROM StartEndTemperatures
-ORDER BY TemperatureChange DESC;
+ORDER BY (EndTemperature - StartTemperature) DESC;
 
 -- Global average temperature change
 ;WITH GlobalTemps AS (
@@ -88,10 +111,12 @@ ORDER BY TemperatureChange DESC;
         LAST_VALUE(AverageTemperature) OVER (ORDER BY Year ASC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS EndTemperature
     FROM dbo.ProcessedTimeSeries
 )
+INSERT INTO dbo.ExplorationResults (AnalysisName, Result)
 SELECT DISTINCT
-    StartYear,
-    EndYear,
-    StartTemperature,
-    EndTemperature,
-    EndTemperature - StartTemperature AS TemperatureChange
+    'Global Average Temperature Change' AS AnalysisName,
+    CONCAT('StartYear: ', StartYear, 
+           ', EndYear: ', EndYear, 
+           ', StartTemperature: ', StartTemperature, 
+           ', EndTemperature: ', EndTemperature, 
+           ', TemperatureChange: ', EndTemperature - StartTemperature) AS Result
 FROM GlobalTemps;
