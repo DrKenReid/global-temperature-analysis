@@ -49,9 +49,6 @@ Thumbs.db
 *.pdf
 *.zip
 
-# Tableau workbooks
-*.twb
-*.twbx
 
 # Sensitive information
 *.env
